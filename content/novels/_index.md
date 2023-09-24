@@ -10,6 +10,6 @@ title: "数学 Novels"
 
 カタラン数に特化した大学に通うお話です。
 
-- [第1話](./kataran/1)
-- [第2話](./kataran/2)
-- [第3話](./kataran/3)
+- [第1話](./kataran/1/)
+- [第2話](./kataran/2/)
+- [第3話](./kataran/3/)
