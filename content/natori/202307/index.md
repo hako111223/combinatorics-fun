@@ -78,7 +78,7 @@ $$
 これを数式で書くと、平面分割は
 
 $$
-\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \mu^{(1)}\succ\mu^{(0)}=(0)\\}
+\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\\}
 $$
 
 と同一視されます。$m,n$ を固定すれば、これは 0 でない成分だけを見たとき $m\times n$ 長方形の内部に含まれる平面分割となります。
@@ -132,7 +132,7 @@ $$
 平面分割を
 
 $$
-\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \mu^{(1)}\succ\mu^{(0)}=(0)\\}
+\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\\}
 $$
 
 と見たとき、箱の数は
