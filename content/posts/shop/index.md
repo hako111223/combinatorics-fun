@@ -60,3 +60,18 @@ $\mathrm{H}_2\mathrm{O}$ なのでTシャツのデフォルトカラーをライ
 アステカダイヤモンドの場合は以下の論文にも似たような図があります。タイトルの通り図のみを用いて証明しています。
 
 - Butler, Steve. Proof without words: independent sets in grid graphs and tilings of Aztec diamonds. Math. Mag. 92, No. 2, 126-127 (2019).
+
+## Increasing Binary Tree
+
+- [スタンダードTシャツ](https://suzuri.jp/combinatorics/14429219/t-shirt/s/natural)
+- [トートバッグ](https://suzuri.jp/combinatorics/14429219/tote-bag/m/lime)
+- [ビッグショルダーバッグ](https://suzuri.jp/combinatorics/14429219/big-shoulder-bag/m/natural)
+- [エコバッグ](https://suzuri.jp/combinatorics/14429219/reusable-bag/m/white)
+
+二分木であって根から葉に向かって数字が単調増加となるものです。順列と increasing binary tree の間には全単射が存在します。簡単に解説すると次のようになります。
+
+- 順列の最小値が根となる。最小値で順列を 2 つに分ける。
+- 左側の部分の最小値が左側の子、右側の部分の最小値が右側の子となる。
+- これを繰り返す。
+
+有名な教科書 Enumerative Combinatorics でも扱われています。
