@@ -15,6 +15,7 @@ title: "数学記事・PDF"
 ## PDF
 
 - [Kac-Moody 代数](./pdf/kac_moody_algebra.pdf) : Kac-Moody 代数の入門用です。未完成です。
+- [頂点作用素と Hall-Littlewood 多項式](./pdf/vertex_operators_and_hall_littlewood_polynomials.pdf) : 頂点作用素を用いて Hall-Littlewood 多項式を作ります。
 
 ## Zenn
 
