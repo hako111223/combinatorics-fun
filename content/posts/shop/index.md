@@ -75,3 +75,14 @@ $\mathrm{H}_2\mathrm{O}$ なのでTシャツのデフォルトカラーをライ
 - これを繰り返す。
 
 有名な教科書 Enumerative Combinatorics でも扱われています。
+
+## pipe dream
+
+- [スタンダードTシャツ](https://suzuri.jp/combinatorics/14735351/t-shirt/s/white)
+- [ジップパーカー](https://suzuri.jp/combinatorics/14735351/zip-hoodie/s/white)
+- [ヘビーウェイトジップパーカー](https://suzuri.jp/combinatorics/14735351/heavyweight-zip-hoodie/l/offwhite)
+- [スマホケース](https://suzuri.jp/combinatorics/14735351/smartphone-case/iphone14/white)
+- [サーモタンブラー](https://suzuri.jp/combinatorics/14735351/thermo-tumbler/360ml/white)
+- [クリアマルチケース](https://suzuri.jp/combinatorics/14735351/clear-multi-case/m/clear)
+
+シューベルト多項式を組合せ論的に定義するときに現れる図形です。
