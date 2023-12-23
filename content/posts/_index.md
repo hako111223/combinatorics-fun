@@ -12,7 +12,7 @@ title: "数学記事・PDF"
 - [フーリエ変換と表現論](./fourier/) : 高速フーリエ変換を表現論の観点から説明します。
 - [組合せ論ショップを開設しました](./shop/) : 組合せ論ショップで扱っている図形の解説をします。
 - [表現論に入門したい人向けの記事](./introduction-to-representation/) : 表現論 Advent Calendar 2023 の 1 日目の記事です。
-- [線形代数の知識だけでわかる！対称多項式入門（前編）](./symmetric-function-1/) : Math Advent Calendar 2023 の 19 日目の記事です。
+- [線形代数の知識だけでわかる！対称多項式入門（前編）](./symmetric-polynomial-1/) : Math Advent Calendar 2023 の 19 日目の記事です。
 
 ## PDF
 
