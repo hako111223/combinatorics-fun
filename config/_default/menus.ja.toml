@@ -20,11 +20,6 @@
   pageRef = "posts"
   weight = 11
 
-[[main]]
-  name = "Novels"
-  pageRef = "novels"
-  weight = 12
-
 #[[main]]
 #  name = "Parent"
 #  weight = 20

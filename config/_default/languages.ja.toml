@@ -9,7 +9,7 @@ title = "組合せ論、楽しい！"
 logo = "images/logo_transparent.png"
 # secondaryLogo = "images/logo.png"
 description = "組合せ論の魅力をたっぷり紹介するサイトです。"
-copyright = "© 2023 hako111223"
+copyright = "© 2024 hako111223"
 
 dateFormat = "2006-01-02"
 
@@ -59,6 +59,6 @@ dateFormat = "2006-01-02"
 #     { twitch = "https://twitch.tv/username" },
     { twitter = "https://twitter.com/hako111223" },
 #     { whatsapp = "https://wa.me/phone-number" },
-    { youtube = "https://www.youtube.com/@combinatorics-fun" },
+#    { youtube = "https://www.youtube.com/@combinatorics-fun" },
 #     { ko-fi = "https://ko-fi.com/username" },
   ]
