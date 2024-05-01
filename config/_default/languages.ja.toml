@@ -20,7 +20,7 @@ dateFormat = "2006-01-02"
 #  bio = "A little bit about you"
   links = [
 #     { email = "mailto:hello@your_domain.com" },
-#     { link = "https://link-to-some-website.com/" },
+     { link = "https://koboshi-kyopro.hatenablog.com/entry/2023/08/03/235222" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
 #     { blogger = "https://username.blogspot.com/" },
@@ -59,6 +59,6 @@ dateFormat = "2006-01-02"
 #     { twitch = "https://twitch.tv/username" },
     { twitter = "https://twitter.com/hako111223" },
 #     { whatsapp = "https://wa.me/phone-number" },
-#    { youtube = "https://www.youtube.com/@combinatorics-fun" },
+    { youtube = "https://www.youtube.com/@zunda-kazoeage" },
 #     { ko-fi = "https://ko-fi.com/username" },
   ]
