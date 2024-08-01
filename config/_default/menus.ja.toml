@@ -16,14 +16,24 @@
   weight = 10
 
 [[main]]
+  name = "KumiaLab"
+  pageRef = "kumialab"
+  weight = 11
+
+[[main]]
+  name = "EC"
+  pageRef = "ec"
+  weight = 12
+
+[[main]]
   name = "Posts"
   pageRef = "posts"
-  weight = 11
+  weight = 15
 
 [[main]]
   name = "Novels"
   pageRef = "novels"
-  weight = 12
+  weight = 16
 
 #[[main]]
 #  name = "Parent"
