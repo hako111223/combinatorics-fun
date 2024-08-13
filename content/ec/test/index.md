@@ -1,6 +1,6 @@
 ---
 title: "【いーしー部！】はじまり【ぷろろーぐ！】"
-date: 2025-07-13
+date: 2024-07-13
 showTableOfContents: true
 ---
 
