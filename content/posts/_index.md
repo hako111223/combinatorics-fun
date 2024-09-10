@@ -20,6 +20,7 @@ title: "数学記事・PDF"
 - 群論問題集 ([問題](./pdf/algebra_group_problem.pdf), [解答](./pdf/algebra_group_answer.pdf)) : 群論の問題集です。院試対策になるといいな。
 - [Kac-Moody 代数](./pdf/kac_moody_algebra.pdf) : Kac-Moody 代数の入門用です。未完成です。
 - [頂点作用素と Hall-Littlewood 多項式](./pdf/vertex_operators_and_hall_littlewood_polynomials.pdf) : Jing による Hall-Littlewood 多項式の頂点作用素表示について解説します。
+- [Bruhat 分解と Birkhoff 分解](./pdf/bruhat_birkhoff.pdf) : (twin) Tits 系の公理から Bruhat 分解と Birkhoff 分解を証明します。
 
 ## Zenn
 
