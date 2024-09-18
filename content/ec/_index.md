@@ -11,6 +11,7 @@ https://koboshi-kyopro.hatenablog.com/entry/2024/06/22/160044
 ## ぷろろーぐ！
 
 - [はじまり](./prologue/)
+- [くみあせんせー](./prologue-2/)
 
 ## 本編
 
