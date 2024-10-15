@@ -18,3 +18,11 @@ https://koboshi-kyopro.hatenablog.com/entry/2024/06/22/160044
 Enumerative Combinatorics、通称 EC の演習問題を解いていきます。マンガ形式で組合せ論のことを知ってもらおうという企画です。
 
 - [だい１わ！](./1/)
+
+## 一コママンガ
+
+本編の制作が大変なので、代わりに一コママンガを制作します。EC の一章の各演習問題と対応します。
+
+- [1](./1koma/1.png)
+- [2](./1koma/2.png)
+- [3](./1koma/3.png)
