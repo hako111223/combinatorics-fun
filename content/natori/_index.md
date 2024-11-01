@@ -33,3 +33,4 @@ title: "月刊組合せ論 Natori"
 - [【月刊組合せ論 Natori】長さ 3 の pattern avoidance【2024 年 8 月号】](./202408/)
 - [【月刊組合せ論 Natori】ランダムヤングタブローと北極圏定理【2024 年 9 月号】](./202409/)
 - [【月刊組合せ論 Natori】Mahonian statistics【2024 年 10 月号】](./202410/)
+- [【月刊組合せ論 Natori】Stanley-Stembridge 予想【2024 年 11 月号】](./202411/)
