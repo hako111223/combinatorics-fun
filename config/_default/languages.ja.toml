@@ -9,7 +9,7 @@ title = "組合せ論、楽しい！"
 logo = "images/logo_transparent.png"
 # secondaryLogo = "images/logo.png"
 description = "組合せ論の魅力をたっぷり紹介するサイトです。"
-copyright = "© 2024 hako111223"
+copyright = "© 2024 hakoboshi"
 
 dateFormat = "2006-01-02"
 
@@ -20,7 +20,7 @@ dateFormat = "2006-01-02"
   bio = "のんびり暮らしたい。"
   links = [
 #     { email = "mailto:hello@your_domain.com" },
-     { link = "https://koboshi-kyopro.hatenablog.com/entry/2023/08/03/235222" },
+     { link = "https://lit.link/hakoboshi" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
 #     { blogger = "https://username.blogspot.com/" },
@@ -57,7 +57,7 @@ dateFormat = "2006-01-02"
 #     { tiktok = "https://tiktok.com/@username" },
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
-    { twitter = "https://twitter.com/hako111223" },
+    { twitter = "https://twitter.com/hakoboshi_e" },
 #     { whatsapp = "https://wa.me/phone-number" },
     { youtube = "https://www.youtube.com/@zunda-kazoeage" },
 #     { ko-fi = "https://ko-fi.com/username" },
