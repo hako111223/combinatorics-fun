@@ -2,7 +2,6 @@
 title: "二項係数を含む等式で大活躍！？Snake Oil method"
 date: 2024-12-02
 showTableOfContents: true
-draft: true
 ---
 
 {{< katex >}}
@@ -17,6 +16,10 @@ $$
 という等式があります。このような等式はどう証明したらよいでしょうか？
 
 今回は generatingfunctionology という本で紹介されている Snake Oil method という手法を紹介します。
+
+![](./featured.jpg)
+
+(これは Bing Image Creator で生成した Snake Oil method のイラストです)
 
 ## Snake Oil method
 
@@ -221,6 +224,8 @@ g(x) &= \sum_{m\ge 0}\sum_{k=0}^m(2m+3)\frac{(-1)^k}{2k+3}\binom{m}{k}x^m \\\
 $$
 
 こうして、$f(x)=g(x)$ がわかりました。
+
+Snake Oil method を実践できて嬉しかったです。
 
 当時この証明を本人にリプライしましたが、そのときのアカウントを削除したため現在は読めなくなっています。
 

@@ -14,6 +14,7 @@ title: "数学記事・PDF"
 - [表現論に入門したい人向けの記事](./introduction-to-representation/) : 表現論 Advent Calendar 2023 の 1 日目の記事です。
 - [線形代数の知識だけでわかる！対称多項式入門（前編）](./symmetric-polynomial-1/) : Math Advent Calendar 2023 の 19 日目の記事です。
 - [奇数次元のシンプレクティック群とは何か](./odd-symplectic/) : 表現論 Advent Calendar 2023 の 25 日目の記事です。
+- [二項係数を含む等式で大活躍！？Snake Oil method](./snake-oil/) : 日曜数学 Advent Calendar 2024 の 2 日目の記事です。
 
 ## PDF
 
