@@ -17,6 +17,7 @@ title: "数学記事・PDF"
 - [二項係数を含む等式で大活躍！？Snake Oil method](./snake-oil/) : 日曜数学 Advent Calendar 2024 の 2 日目の記事です。
 - [ランダム順列における固定点の個数の期待値](./random-permutation-fixed-point/) : Math Advent Calendar 2024 の 4 日目の記事です。
 - [組合せ論的な証明ってなんだろう](./what-is-combinatorics/) : 組合せ論 Advent Calendar 2024 の 5 日目の記事です。
+- [折り紙と amplituhedron](./origami-and-amplituhedra/) : 物理学アドベントカレンダー2024 の 12 日目の記事です。
 
 ## PDF
 
