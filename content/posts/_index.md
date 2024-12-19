@@ -18,6 +18,7 @@ title: "数学記事・PDF"
 - [ランダム順列における固定点の個数の期待値](./random-permutation-fixed-point/) : Math Advent Calendar 2024 の 4 日目の記事です。
 - [組合せ論的な証明ってなんだろう](./what-is-combinatorics/) : 組合せ論 Advent Calendar 2024 の 5 日目の記事です。
 - [折り紙と amplituhedron](./origami-and-amplituhedra/) : 物理学アドベントカレンダー2024 の 12 日目の記事です。
+- [de Bruijn-Erdős の定理（グラフ理論）](./dbe/) : Mathematical Logic Advent Calendar 2024 の 19 日目の記事です。
 
 ## PDF
 
