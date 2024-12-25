@@ -20,6 +20,7 @@ title: "数学記事・PDF"
 - [折り紙と amplituhedron](./origami-and-amplituhedra/) : 物理学アドベントカレンダー2024 の 12 日目の記事です。
 - [de Bruijn-Erdős の定理（グラフ理論）](./dbe/) : Mathematical Logic Advent Calendar 2024 の 19 日目の記事です。
 - [圏における和と積](./category/) : 圏論 Advent Calendar 2024 の 24 日目の記事です。
+- [クリス Math なのでプレゼントボックスを用意しました！(Keller の予想)](./keller/) : 組合せ論 Advent Calendar 2024 の 25 日目の記事です。
 
 ## PDF
 
