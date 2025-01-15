@@ -1,5 +1,5 @@
 ---
-title: "ヤング図形にいろいろ書き込みましょう！【ヤング図形 3】"
+title: "【くみあラボ】ヤング図形にいろいろ書き込みましょう！【ヤング図形 3】"
 date: 2024-12-15
 showTableOfContents: true
 authors:

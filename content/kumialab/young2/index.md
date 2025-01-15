@@ -1,5 +1,5 @@
 ---
-title: "ジョルダン標準形とヤング図形【ヤング図形 2】"
+title: "【くみあラボ】ジョルダン標準形とヤング図形【ヤング図形 2】"
 date: 2024-10-15
 showTableOfContents: true
 authors:

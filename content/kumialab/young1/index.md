@@ -1,5 +1,5 @@
 ---
-title: "私の大好きなヤング図形について紹介します！【ヤング図形 1】"
+title: "【くみあラボ】私の大好きなヤング図形について紹介します！【ヤング図形 1】"
 date: 2024-09-15
 showTableOfContents: true
 authors:
