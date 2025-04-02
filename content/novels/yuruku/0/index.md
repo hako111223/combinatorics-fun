@@ -4,8 +4,6 @@ date: 2024-03-27
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## 部屋
 
 早稲くみあ「おはよー！」

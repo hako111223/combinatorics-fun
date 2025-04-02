@@ -4,7 +4,6 @@ date: 2023-05-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回はヤング図形好きなら外せない、フック長公式について深掘りしていきます。
 
 ## フック長公式
@@ -67,9 +66,9 @@ $$
 
 $$
 \begin{align*}
-\frac{F_{\mu}}{F_{\lambda}} &= \frac{(n-1)!/\prod_{(i,j)\in \mu}h_{\mu}(i,j)}{n!/\prod_{(i,j)\in \lambda}h_{\lambda}(i,j)} \\\
-&= \frac{1}{n}\frac{\prod_{(i,j)\in\lambda}h_{\lambda}(i,j)}{\prod_{(i,j)\in\mu}h_{\mu}(i,j)} \\\
-&= \frac{1}{n}\prod_{i=1}^{a-1}\frac{h_{\lambda}(i,b)}{h_{\lambda}(i,b)-1}\prod_{j=1}^{b-1}\frac{h_{\lambda}(a,j)}{h_{\lambda}(a,j)-1} \\\
+\frac{F_{\mu}}{F_{\lambda}} &= \frac{(n-1)!/\prod_{(i,j)\in \mu}h_{\mu}(i,j)}{n!/\prod_{(i,j)\in \lambda}h_{\lambda}(i,j)} \\
+&= \frac{1}{n}\frac{\prod_{(i,j)\in\lambda}h_{\lambda}(i,j)}{\prod_{(i,j)\in\mu}h_{\mu}(i,j)} \\
+&= \frac{1}{n}\prod_{i=1}^{a-1}\frac{h_{\lambda}(i,b)}{h_{\lambda}(i,b)-1}\prod_{j=1}^{b-1}\frac{h_{\lambda}(a,j)}{h_{\lambda}(a,j)-1} \\
 &= \frac{1}{n}\prod_{i=1}^{a-1}\left(1+\frac{1}{h_{\lambda}(i,b)-1}\right)\prod_{j=1}^{b-1}\left(1+\frac{1}{h_{\lambda}(a,j)-1}\right)
 \end{align*}
 $$
@@ -78,21 +77,21 @@ $$
 
 $$
 \begin{gather*}
-\frac{F_{\mu}}{F_{\lambda}}=\frac{1}{n}\sum_{A\subseteq\\{1,\ldots,a-1\\}}\sum_{B\subseteq\\{1,\ldots,b-1\\}}Q(A,B) \\\
+\frac{F_{\mu}}{F_{\lambda}}=\frac{1}{n}\sum_{A\subseteq\{1,\ldots,a-1\}}\sum_{B\subseteq\{1,\ldots,b-1\}}Q(A,B) \\
 Q(A,B)=\prod_{i\in A}\frac{1}{h_{\lambda}(i,b)-1}\prod_{j\in B}\frac{1}{h_{\lambda}(a,j)-1}
 \end{gather*}
 $$
 
 となります。
 
-ここで部分集合 $A,B$ に対して、フックウォークの始点が $(\min(A\cup\\{a\\}), \min(B\cup\\{b\\}))$、終点が $(a,b)$ になるという条件の下で、フックウォークの行番号の集合が $A\cup\\{a\\}$、列番号の集合が $B\cup\\{b\\}$ になる条件付き確率を $P(A,B)$ とします。$P(A,B)=Q(A,B)$ を示せば命題が示されます。
+ここで部分集合 $A,B$ に対して、フックウォークの始点が $(\min(A\cup\{a\}), \min(B\cup\{b\}))$、終点が $(a,b)$ になるという条件の下で、フックウォークの行番号の集合が $A\cup\{a\}$、列番号の集合が $B\cup\{b\}$ になる条件付き確率を $P(A,B)$ とします。$P(A,B)=Q(A,B)$ を示せば命題が示されます。
 
-$|A|+|B|$ に関する帰納法を用います。$A$ または $B$ が空集合のときは簡単にわかるので、そうでないとします。$x_1=\min A, y_1=\min B$ とおきます。$P(A,B)=\frac{1}{h_{\lambda}(x_1,y_1)-1}(P(A\setminus\\{x_1\\}, B)+P(A,B\setminus\\{y_1\\}))$ です。帰納法の仮定より
+$|A|+|B|$ に関する帰納法を用います。$A$ または $B$ が空集合のときは簡単にわかるので、そうでないとします。$x_1=\min A, y_1=\min B$ とおきます。$P(A,B)=\frac{1}{h_{\lambda}(x_1,y_1)-1}(P(A\setminus\{x_1\}, B)+P(A,B\setminus\{y_1\}))$ です。帰納法の仮定より
 
 $$
 \begin{align*}
-P(A\setminus\\{x_1\\}, B) &= Q(A\setminus\\{x_1\\}, B) \\\
-&= \prod_{i\in A\setminus\\{x_1\\}}\frac{1}{h_{\lambda}(i,b)-1}\prod_{j\in B}\frac{1}{h_{\lambda}(a,j)-1} \\\
+P(A\setminus\{x_1\}, B) &= Q(A\setminus\{x_1\}, B) \\
+&= \prod_{i\in A\setminus\{x_1\}}\frac{1}{h_{\lambda}(i,b)-1}\prod_{j\in B}\frac{1}{h_{\lambda}(a,j)-1} \\
 &= (h_{\lambda}(x_1,b)-1)Q(A,B)
 \end{align*}
 $$
@@ -100,7 +99,7 @@ $$
 同様に
 
 $$
-P(A,B\setminus\\{y_1\\})=(h_{\lambda}(a,y_1)-1)Q(A,B)
+P(A,B\setminus\{y_1\})=(h_{\lambda}(a,y_1)-1)Q(A,B)
 $$
 
 となるので

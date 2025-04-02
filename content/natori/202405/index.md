@@ -4,7 +4,6 @@ date: 2024-05-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は半標準ヤングタブローの個数を求める公式について解説します。
 
 ## 半標準ヤングタブロー
@@ -43,9 +42,9 @@ $$
 $$
 A_{\delta_n}(x_1,\ldots,x_n)=
 \begin{vmatrix}
-x_1^{n-1} & \cdots & x_1 & 1 \\\
-x_2^{n-1} & \cdots & x_2 & 1 \\\
-\vdots & \ddots & \vdots & \vdots \\\
+x_1^{n-1} & \cdots & x_1 & 1 \\
+x_2^{n-1} & \cdots & x_2 & 1 \\
+\vdots & \ddots & \vdots & \vdots \\
 x_n^{n-1} & \cdots & x_n & 1
 \end{vmatrix}
 =\prod_{1\le i<j\le n}(x_i-x_j)
@@ -62,10 +61,10 @@ $$
 $$
 A_{\lambda+\delta_n}(1,q,q^2,\ldots,q^{n-1})=
 \begin{vmatrix}
-1 & 1 & \cdots & 1 \\\
-q^{\lambda_1+n-1} & q^{\lambda_2+n-2} & \cdots & q^{\lambda_n} \\\
-q^{2(\lambda_1+n-1)} & q^{2(\lambda_2+n-2)} & \cdots & q^{2\lambda_n} \\\
-\vdots & \vdots & \ddots & \vdots \\\
+1 & 1 & \cdots & 1 \\
+q^{\lambda_1+n-1} & q^{\lambda_2+n-2} & \cdots & q^{\lambda_n} \\
+q^{2(\lambda_1+n-1)} & q^{2(\lambda_2+n-2)} & \cdots & q^{2\lambda_n} \\
+\vdots & \vdots & \ddots & \vdots \\
 q^{(n-1)(\lambda_1+n-1)} & q^{(n-1)(\lambda_2+n-2)} & \cdots & q^{(n-1)\lambda_n}
 \end{vmatrix}
 $$
@@ -104,11 +103,11 @@ $$
 
 ![](./wtNYlSS.png)
 
-$l_i=\lambda_i+n-i$ とおきます。$M=\\{l_1,\ldots,l_n\\}$ はマヤ図形と対応します (つまり $l_i$ は黒丸の位置と対応します)。いま
+$l_i=\lambda_i+n-i$ とおきます。$M=\{l_1,\ldots,l_n\}$ はマヤ図形と対応します (つまり $l_i$ は黒丸の位置と対応します)。いま
 
 $$
 \begin{gather*}
-\prod_{1\le i<j\le n}(\lambda_i-\lambda_j+j-i)=\prod_{1\le i<j\le n}(l_i-l_j)=\prod_{\substack{0\le q<p \\\ p,q\in M}}(p-q) \\\
+\prod_{1\le i<j\le n}(\lambda_i-\lambda_j+j-i)=\prod_{1\le i<j\le n}(l_i-l_j)=\prod_{\substack{0\le q<p \\ p,q\in M}}(p-q) \\
 \prod_{1\le i<j\le n}(j-i)=\prod_{0\le q<p<n}(p-q)
 \end{gather*}
 $$
@@ -116,17 +115,17 @@ $$
 となります。またマヤゲームのところで説明した通り、フックを引き抜く操作は黒石を左側の空きマスに移動させることと対応します。このことからフックは左側の空きマスと右側の黒石のペアとして表現できます。よって
 
 $$
-\prod_{(i,j)\in\lambda}h(i,j)=\prod_{\substack{0\le q<p \\\ p\in M, q\notin M}}(p-q)
+\prod_{(i,j)\in\lambda}h(i,j)=\prod_{\substack{0\le q<p \\ p\in M, q\notin M}}(p-q)
 $$
 
 となります。以上より
 
 $$
 \begin{align*}
-d_{\lambda}(n)\prod_{(i,j)\in \lambda}h(i,j) &= \frac{\prod_{0\le q<p; \ p,q\in M}(p-q)\prod_{0\le q<p; \ p\in M, q\notin M}(p-q)}{\prod_{0\le q<p<n}(p-q)} \\\
-&= \frac{\prod_{0\le q<p; \ p\in M}(p-q)}{\prod_{0\le q<p<n}(p-q)} \\\
-&= \prod_{i=1}^n\frac{l_i!}{(n-i)!} \\\
-&= \prod_{i=1}^n(\lambda_i+n-i)(\lambda_i+n-i-1)\cdots (n-i+1) \\\
+d_{\lambda}(n)\prod_{(i,j)\in \lambda}h(i,j) &= \frac{\prod_{0\le q<p; \ p,q\in M}(p-q)\prod_{0\le q<p; \ p\in M, q\notin M}(p-q)}{\prod_{0\le q<p<n}(p-q)} \\
+&= \frac{\prod_{0\le q<p; \ p\in M}(p-q)}{\prod_{0\le q<p<n}(p-q)} \\
+&= \prod_{i=1}^n\frac{l_i!}{(n-i)!} \\
+&= \prod_{i=1}^n(\lambda_i+n-i)(\lambda_i+n-i-1)\cdots (n-i+1) \\
 &= \prod_{(i,j)\in\lambda}(n+c(i,j))
 \end{align*}
 $$
@@ -159,7 +158,7 @@ $$
 
 $$
 \begin{align*}
-&=\frac{1}{0!1!\cdots (n-1)!}\det[(\lambda_j+2n-i-j)\cdots (\lambda_j+n-j+1)] \\
+&=\frac{1}{0!1!\cdots (n-1)!}\det[(\lambda_j+2n-i-j)\cdots (\lambda_j+n-j+1)] \
 &=\frac{\det[(\lambda_j+n-j+1)^{i-1}]}{0!1!\cdots (n-1)!}
 \end{align*}
 $$

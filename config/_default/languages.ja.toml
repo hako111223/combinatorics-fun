@@ -1,29 +1,33 @@
+disabled = false
 languageCode = "ja"
 languageName = "日本語"
-displayName = "JA"
-isoCode = "ja"
 weight = 1
-rtl = false
-
 title = "組合せ論、楽しい！"
-logo = "images/logo_transparent.png"
-# secondaryLogo = "images/logo.png"
-description = "組合せ論の魅力をたっぷり紹介するサイトです。"
-copyright = "© 2025 hakoboshi"
 
-dateFormat = "2006-01-02"
+[params]
+  displayName = "JA"
+  isoCode = "ja"
+  rtl = false
+  dateFormat = "2006-01-02"
+  logo = "images/logo_transparent.png"
+  # secondaryLogo = "images/logo.png"
+  description = "組合せ論の魅力をたっぷり紹介するサイトです。"
+  copyright = "© 2025 hakoboshi"
 
-[author]
+[params.author]
   name = "箱星"
   image = "images/logo.png"
   headline = "組合せ論大好き"
   bio = "のんびり暮らしたい。"
+#   email = "youremail@example.com"
+#   imageQuality = 96
   links = [
 #     { email = "mailto:hello@your_domain.com" },
      { link = "https://lit.link/hakoboshi" },
 #     { amazon = "https://www.amazon.com/hz/wishlist/ls/wishlist-id" },
 #     { apple = "https://www.apple.com" },
 #     { blogger = "https://username.blogspot.com/" },
+    { bluesky = "https://bsky.app/profile/hakoboshi.bsky.social" },
 #     { codepen = "https://codepen.io/username" },
 #     { dev = "https://dev.to/username" },
 #     { discord = "https://discord.gg/invitecode" },
@@ -31,11 +35,12 @@ dateFormat = "2006-01-02"
 #     { facebook = "https://facebook.com/username" },
 #     { flickr = "https://www.flickr.com/photos/username/" },
 #     { foursquare = "https://foursquare.com/username" },
-#     { github = "https://github.com/username" },
+    { github = "https://github.com/hako111223" },
 #     { gitlab = "https://gitlab.com/username" },
 #     { google = "https://www.google.com/" },
 #     { hashnode = "https://username.hashnode.dev" },
 #     { instagram = "https://instagram.com/username" },
+#     { itch-io = "https://username.itch.io" },
 #     { keybase = "https://keybase.io/username" },
 #     { kickstarter = "https://www.kickstarter.com/profile/username" },
 #     { lastfm = "https://lastfm.com/user/username" },
@@ -51,14 +56,18 @@ dateFormat = "2006-01-02"
 #     { slack = "https://workspace.url/team/userid" },
 #     { snapchat = "https://snapchat.com/add/username" },
 #     { soundcloud = "https://soundcloud.com/username" },
+#     { spotify = "https://open.spotify.com/user/userid" },
 #     { stack-overflow = "https://stackoverflow.com/users/userid/username" },
 #     { steam = "https://steamcommunity.com/profiles/userid" },
 #     { telegram = "https://t.me/username" },
+#     { threads = "https://www.threads.net/@username" },
 #     { tiktok = "https://tiktok.com/@username" },
 #     { tumblr = "https://username.tumblr.com" },
 #     { twitch = "https://twitch.tv/username" },
     { twitter = "https://twitter.com/hakoboshi_e" },
+#     { x-twitter = "https://twitter.com/username" },
 #     { whatsapp = "https://wa.me/phone-number" },
     { youtube = "https://www.youtube.com/@zunda-kazoeage" },
 #     { ko-fi = "https://ko-fi.com/username" },
+#     { codeberg = "https://codeberg.org/username"},
   ]

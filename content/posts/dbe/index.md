@@ -4,7 +4,6 @@ date: 2024-12-19
 showTableOfContents: true
 ---
 
-{{< katex >}}
 この記事は [Mathematical Logic Advent Calendar 2024](https://adventar.org/calendars/9945) の 19 日目の記事です。
 
 今回は de Bruijn-Erdős の定理について解説します。少なくとも 2 つあるようですが、グラフ理論の方の定理を紹介します。
@@ -68,22 +67,22 @@ $F$ が 集合 $X$ 上の**フィルター**とは、$F$ は $X$ のべき集合
 超フィルター定理を仮定して命題論理のコンパクト性定理を証明します。集合 $I$ 上の論理式を考えているとし、$\Sigma$ を有限充足可能な論理式の集合、$2^I$ を付値全体の集合とします。論理式 $\phi\in\Sigma$ に対して
 
 $$
-V_{\phi}=\\{\nu\in 2^I\mid \nu(\phi)=1\\}
+V_{\phi}=\{\nu\in 2^I\mid \nu(\phi)=1\}
 $$
 
 とおき、仮定より $V_{\phi_1}\cap\cdots\cap V_{\phi_n}$ は空ではありません。よって
 
 $$
-X=\\{V_{\phi}\mid \phi\in \Sigma\\}
+X=\{V_{\phi}\mid \phi\in \Sigma\}
 $$
 
 は有限交叉性をみたすので、超フィルター定理より $X\subset D\subset\mathcal{P}(2^I)$ をみたす超フィルター $D$ が存在します。このような $D$ に対して、論理式の集合 $S$ を
 
 $$
-S=\\{\phi\mid V_{\phi} \in D\\}
+S=\{\phi\mid V_{\phi} \in D\}
 $$
 
-により定義します。$X\subset D$ より $\Sigma \subset S$ です。$\phi_1,\ldots,\phi_n\in S$ に対して、$D$ の有限交叉性から、$\nu(\phi_1)=\cdots=\nu(\phi_n)=1$ をみたす $\nu\in 2^I$ が存在します。すなわち $S$ は有限充足可能です。任意の論理式 $\phi$ に対して、$D$ は超フィルターより $\phi\in S$ または $\neg \phi\in S$ をみたします。したがって $S$ は極大なので、ある $\nu\in 2^I$ を用いて $S=\\{\phi\mid \nu(\phi)=1\\}$ と表せます。$\Sigma\subset S$ より、$\Sigma$ も充足可能です。（証明おわり）
+により定義します。$X\subset D$ より $\Sigma \subset S$ です。$\phi_1,\ldots,\phi_n\in S$ に対して、$D$ の有限交叉性から、$\nu(\phi_1)=\cdots=\nu(\phi_n)=1$ をみたす $\nu\in 2^I$ が存在します。すなわち $S$ は有限充足可能です。任意の論理式 $\phi$ に対して、$D$ は超フィルターより $\phi\in S$ または $\neg \phi\in S$ をみたします。したがって $S$ は極大なので、ある $\nu\in 2^I$ を用いて $S=\{\phi\mid \nu(\phi)=1\}$ と表せます。$\Sigma\subset S$ より、$\Sigma$ も充足可能です。（証明おわり）
 
 逆に命題論理のコンパクト性から超フィルター定理を証明することもできます。すなわちこの 2 つの定理は同値です。
 

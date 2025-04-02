@@ -4,8 +4,6 @@ date: 2024-03-28
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## いっぱい
 
 早稲くみあ「おはよー！」

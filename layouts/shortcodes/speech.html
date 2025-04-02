@@ -1,0 +1,30 @@
+{{ $img := .Get "img" }}
+{{ $name := .Get "name" }}
+{{ $reverse := .Get "reverse" }}
+{{ if $reverse }}
+  <div class="flex items-center p-4">
+    <div class="flex flex-col w-full p-4 bg-primary-100 dark:bg-primary-800 rounded-lg shadow-xl">
+      <div class="flex items-center space-x-2">
+        <span class="font-semibold">{{ $name }}</span>
+      </div>
+      <p class="font-normal py-2.5">{{- .Inner -}}</p>
+    </div>
+    <div class="w-6">
+      <div class="h-6 bg-primary-100 dark:bg-primary-800 rotate-45 origin-top-left rounded-sm"></div>
+    </div>
+    <img class="w-20 h-20 rounded-full" src="{{ $img }}">
+  </div>
+{{ else }}
+  <div class="flex items-center p-4">
+    <img class="w-20 h-20 rounded-full" src="{{ $img }}">
+    <div class="w-6">
+      <div class="h-6 bg-primary-100 dark:bg-primary-800 rotate-45 origin-bottom-right rounded-sm"></div>
+    </div>
+    <div class="flex flex-col w-full p-4 bg-primary-100 dark:bg-primary-800 rounded-lg shadow-xl">
+      <div class="flex items-center space-x-2">
+        <span class="font-semibold">{{ $name }}</span>
+      </div>
+      <p class="font-normal py-2.5">{{- .Inner -}}</p>
+    </div>
+  </div>
+{{ end }}

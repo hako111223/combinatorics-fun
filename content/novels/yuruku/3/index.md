@@ -4,8 +4,6 @@ date: 2024-04-10
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## ゲームと数学
 
 早稲くみあ「いっぱい遊んだねー」

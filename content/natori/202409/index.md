@@ -4,7 +4,6 @@ date: 2024-09-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は $N\times N$ 型のヤングタブローにおいて $N\to\infty$ としたときにどうなるかを考えていきます。
 
 ## ヤングタブロー

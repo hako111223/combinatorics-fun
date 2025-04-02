@@ -6,7 +6,6 @@ authors:
   - "kumia"
 ---
 
-{{< katex >}}
 みなさん、combanwa～！組合せ論系 VTuber の早稲くみあです！
 
 ![kumia](./featured.png)
@@ -21,10 +20,10 @@ authors:
 
 $$
 J_n(a)=\begin{pmatrix}
-a & 1 & 0 & \cdots & 0 \\\
-0 & a & 1 & \cdots & 0 \\\
-& & \ddots & \\\
-0 & \cdots & 0 & a & 1 \\\
+a & 1 & 0 & \cdots & 0 \\
+0 & a & 1 & \cdots & 0 \\
+& & \ddots & \\
+0 & \cdots & 0 & a & 1 \\
 0 & \cdots & 0 & 0 & a
 \end{pmatrix}
 $$
@@ -33,9 +32,9 @@ $$
 
 $$
 \begin{pmatrix}
-J_{n_1}(a_1) & & & O \\\
-& J_{n_2}(a_2) & & \\\
-& & \ddots & \\\
+J_{n_1}(a_1) & & & O \\
+& J_{n_2}(a_2) & & \\
+& & \ddots & \\
 O & & & J_{n_k}(a_k)
 \end{pmatrix}
 $$
@@ -46,7 +45,7 @@ $$
 
 $$
 A=\begin{pmatrix}
--11 & -25 \\\
+-11 & -25 \\
 4 & 9
 \end{pmatrix}
 $$
@@ -54,13 +53,13 @@ $$
 まずは固有方程式を解きます。$\det(A-\lambda I)=0$ は $\lambda^2+2\lambda+1=0$ となり、固有値は $-1$ (重複度 2) です。$A\mathbf{v}=-\mathbf{v}$ をみたすベクトル $\mathbf{v}$ を求めると $t\binom{-5}{2}$ の形です。$\mathbf{v}_1=\binom{-5}{2}$ とします。ここで $A\mathbf{v}=-\mathbf{v}+\mathbf{v_1}$ をみたす $\mathbf{v}$ を求めると、$t\binom{-5}{2}+\binom{-2}{1}$ です。$\mathbf{v}_2=\binom{-2}{1}$ とします。$P=(\mathbf{v}_1 \ \mathbf{v}_2)$ とすると
 
 $$
-AP=(A\mathbf{v}_1 \ A\mathbf{v}_2)=(-\mathbf{v}_1 \ -\mathbf{v}_2+\mathbf{v}_1)=P\begin{pmatrix} -1 & 1 \\\ 0 & -1 \end{pmatrix}
+AP=(A\mathbf{v}_1 \ A\mathbf{v}_2)=(-\mathbf{v}_1 \ -\mathbf{v}_2+\mathbf{v}_1)=P\begin{pmatrix} -1 & 1 \\ 0 & -1 \end{pmatrix}
 $$
 
 よって、$A$ のジョルダン標準形が
 
 $$
-\begin{pmatrix} -1 & 1 \\\ 0 & -1 \end{pmatrix}
+\begin{pmatrix} -1 & 1 \\ 0 & -1 \end{pmatrix}
 $$
 
 であることがわかりました。
@@ -71,8 +70,8 @@ $$
 
 $$
 A=\begin{pmatrix}
-1 & 1 & 1 \\\
-1 & 1 & 1 \\\
+1 & 1 & 1 \\
+1 & 1 & 1 \\
 -2 & -2 & -2
 \end{pmatrix}
 $$
@@ -80,12 +79,12 @@ $$
 とします。固有値は 0 (重複度 3) です。固有空間の基底として
 
 $$
-\mathbf{v}_1=\begin{pmatrix} -1 \\\ 1 \\\ 0 \end{pmatrix}, \mathbf{v}_2=\begin{pmatrix} -1 \\\ 0 \\\ 1 \end{pmatrix}
+\mathbf{v}_1=\begin{pmatrix} -1 \\ 1 \\ 0 \end{pmatrix}, \mathbf{v}_2=\begin{pmatrix} -1 \\ 0 \\ 1 \end{pmatrix}
 $$
 
 がとれます。次は $A\mathbf{v}=\mathbf{v}_1$ または $A\mathbf{v}=\mathbf{v}_2$ をみたす $\mathbf{v}$ を求めたいですが、どちらも解をもちません。どうすればいいでしょうか？
 
-ここで基底を取り換えて、$\mathbf{v}_3=\mathbf{v}_1-2\mathbf{v}_2=\begin{pmatrix} 1 \\\ 1 \\\ -2 \end{pmatrix}$ として、$\mathbf{v}_3,\mathbf{v}_2$ を基底とします。すると $A\mathbf{v}=\mathbf{v}_3$ をみたす $\mathbf{v}$ がとれます。
+ここで基底を取り換えて、$\mathbf{v}_3=\mathbf{v}_1-2\mathbf{v}_2=\begin{pmatrix} 1 \\ 1 \\ -2 \end{pmatrix}$ として、$\mathbf{v}_3,\mathbf{v}_2$ を基底とします。すると $A\mathbf{v}=\mathbf{v}_3$ をみたす $\mathbf{v}$ がとれます。
 
 というわけで、ジョルダン標準形を求めるのは一筋縄ではいきませんね。次数が大きくなるとジョルダン標準形を求めるのは大変になります。
 
@@ -95,10 +94,10 @@ $$
 
 $$
 J_n(0)=\begin{pmatrix}
-0 & 1 & 0 & \cdots & 0 \\\
-0 & 0 & 1 & \cdots & 0 \\\
-& & \ddots & \\\
-0 & \cdots & 0 & 0 & 1 \\\
+0 & 1 & 0 & \cdots & 0 \\
+0 & 0 & 1 & \cdots & 0 \\
+& & \ddots & \\
+0 & \cdots & 0 & 0 & 1 \\
 0 & \cdots & 0 & 0 & 0
 \end{pmatrix}
 $$

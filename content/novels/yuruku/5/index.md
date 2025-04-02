@@ -4,8 +4,6 @@ date: 2024-05-17
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## フィボナッチ数
 
 さて、まずはこの私、早稲くみあが発表します！

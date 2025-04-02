@@ -4,7 +4,6 @@ date: 2022-12-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は 2022 年のフィールズ賞受賞者である June Huh 氏 (許埈珥、ホ・ジュニとも書かれる) の業績を解説します。
 
 高校中退を経てフィールズ賞を受賞するなど、生い立ちも注目を集めていますが、組合せ論に業績が多いということで今回は業績に注目していきたいと思います。
@@ -105,7 +104,7 @@ Heron-Rota-Welsh 予想は上述の Read の予想をマトロイド上に一般
 
 $X,Y$ がグラフ $G$ の森であるような部分グラフで、辺の数は $Y$ より $X$ の方が多いとします。このとき、$X$ の辺であり $Y$ の辺でないようなある辺 $e$ について、$Y$ に $e$ を追加しても森のままとなります。
 
-一方、ベクトル空間においても似たような命題が成り立ちます。$X,Y$ がベクトル空間 $V$ の線形独立部分集合で、$|X|>|Y|$ とします。このとき、あるベクトル $x\in X\setminus Y$ について $Y\cup\\{x\\}$ が線形独立となります。
+一方、ベクトル空間においても似たような命題が成り立ちます。$X,Y$ がベクトル空間 $V$ の線形独立部分集合で、$|X|>|Y|$ とします。このとき、あるベクトル $x\in X\setminus Y$ について $Y\cup\{x\}$ が線形独立となります。
 
 両者の性質を抽出したものがマトロイドです。
 
@@ -113,7 +112,7 @@ $X,Y$ がグラフ $G$ の森であるような部分グラフで、辺の数は
 
 - $\emptyset\in\mathcal{F}$
 - $X\in\mathcal{F}, Y\subseteq X$ ならば $Y\in\mathcal{F}$
-- $X,Y\in\mathcal{F}, |X|>|Y|$ ならばある $x\in X\setminus Y$ について $Y\cup\\{x\\}\in\mathcal{F}$
+- $X,Y\in\mathcal{F}, |X|>|Y|$ ならばある $x\in X\setminus Y$ について $Y\cup\{x\}\in\mathcal{F}$
 
 例えばある行列 $A$ に対して、$E$ を $A$ の列ベクトル全体、$\mathcal{F}$ を $E$ の線形独立部分集合全体とすればマトロイドとなります。このようなマトロイドを **representable** マトロイドと呼びます。
 
@@ -148,12 +147,12 @@ Adiprasito, Karim; Huh, June; Katz, Eric. Hodge theory for combinatorial geometr
 マトロイドにはランク関数と呼ばれる重要な関数があります。マトロイド $(E,\mathcal{F})$ のランク関数 $r$ は $E$ の部分集合に対し非負整数値を対応させる関数で
 
 $$
-r(X)=\max\\{|Y|:Y\subseteq X, Y\in\mathcal{F}\\}
+r(X)=\max\{|Y|:Y\subseteq X, Y\in\mathcal{F}\}
 $$
 
 により定義されるものです。これは劣モジュラ性という性質をみたすことが知られています。
 
-$E$ の部分集合 $X$ が **flat** であるとは、すべての $e\in E\setminus X$ に対して $r(X\cup\\{e\\})>r(X)$ をみたすことをいいます。ランクが $i$ の flat の個数を $W_i$ とおきます。
+$E$ の部分集合 $X$ が **flat** であるとは、すべての $e\in E\setminus X$ に対して $r(X\cup\{e\})>r(X)$ をみたすことをいいます。ランクが $i$ の flat の個数を $W_i$ とおきます。
 
 次の予想は Dowling, Wilson の Top-Heavy 予想と呼ばれるものです。
 

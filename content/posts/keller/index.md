@@ -4,7 +4,6 @@ date: 2024-12-25
 showTableOfContents: true
 ---
 
-{{< katex >}}
 この記事は[組合せ論 Advent Calendar 2024](https://adventar.org/calendars/10062) の 25 日目の記事です。
 
 いよいよアドベントカレンダーも最終日ですね。そして、今日はクリス Math ですね。

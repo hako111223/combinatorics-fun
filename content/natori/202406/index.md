@@ -4,7 +4,6 @@ date: 2024-06-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回はシューベルト多項式を扱います。
 
 ## シューベルト多項式の基礎
@@ -14,7 +13,7 @@ showTableOfContents: true
 まずは対称群について復習します。$S_n$ を $n$ 次対称群、すなわち $\{1,2,\ldots,n\}$ の置換全体とします。$s_i=(i,i+1)\in S_n$ を隣接互換とします。$S_n$ の任意の元は $s_i$ たちの積として表されます。$w\in S_n$ をそのように表したときに現れる隣接互換の最小個数を $\ell(w)$ で表し、長さといいます。そのときの $w$ の表示を最短表示といいます。$w$ の最短表示は一意的とは限りません。例えば
 
 $$
-\begin{pmatrix} 1 & 2 & 3 & 4 \\\ 4 & 2 & 1 & 3 \end{pmatrix}=s_3s_2s_1s_2=s_1s_3s_2s_1
+\begin{pmatrix} 1 & 2 & 3 & 4 \\ 4 & 2 & 1 & 3 \end{pmatrix}=s_3s_2s_1s_2=s_1s_3s_2s_1
 $$
 
 のように 2 通りの最短表示で表すことができる場合があります。
@@ -32,7 +31,7 @@ $w\in S_n$ の最短表示の一つを $s_{i_1}\cdots s_{i_l}$ としたとき�
 シューベルト多項式は $S_n$ の元で添字づけられた多項式の族です。$w_0$ を $S_n$ の長さ最大の元とします。これは
 
 $$
-w_0=\begin{pmatrix} 1 & 2 & \cdots & n-1 & n \\\ n & n-1 & \cdots & 2 & 1 \end{pmatrix}
+w_0=\begin{pmatrix} 1 & 2 & \cdots & n-1 & n \\ n & n-1 & \cdots & 2 & 1 \end{pmatrix}
 $$
 
 です。シューベルト多項式は $w\in S_n$ に対して
@@ -45,9 +44,9 @@ $$
 
 $$
 \begin{align*}
-\mathfrak{S}_{3142}(x) &= \partial_2\partial_1\partial_3(x_1^3x_2^2x_3) \\\
-&= \partial_2\partial_1(x_1^3x_2^2) \\\
-&= \partial_2(x_1^2x_2^2) \\\
+\mathfrak{S}_{3142}(x) &= \partial_2\partial_1\partial_3(x_1^3x_2^2x_3) \\
+&= \partial_2\partial_1(x_1^3x_2^2) \\
+&= \partial_2(x_1^2x_2^2) \\
 &= x_1^2(x_2+x_3)
 \end{align*}
 $$
@@ -72,7 +71,7 @@ $$
 
 $\mathfrak{S}_w(x)$ は $x_i$ に関する単項式の非負整数係数の線形結合として表せます。係数は組合せ論的に意味があるのではないかと考えられます。これについては Stanley による次の予想（解決済み）があります。
 
-$w\in S_n$ に対して、$R(w)=\\{(i_1,\ldots,i_{\ell(w)})\mid s_{i_1}\cdots s_{i_{\ell(w)}}=w\\}$ を最短表示の集合とします。$a\in R(w)$ に対して、正整数の列 $b$ が $a$-compatible であるとは
+$w\in S_n$ に対して、$R(w)=\{(i_1,\ldots,i_{\ell(w)})\mid s_{i_1}\cdots s_{i_{\ell(w)}}=w\}$ を最短表示の集合とします。$a\in R(w)$ に対して、正整数の列 $b$ が $a$-compatible であるとは
 
 - $b$ は $a$ と同じ長さ (すなわち $\ell(w)$)
 - $b$ は広義単調増加

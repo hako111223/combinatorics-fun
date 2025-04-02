@@ -4,7 +4,6 @@ date: 2024-08-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は pattern avoidance と呼ばれるものに入門していきます。あの数列も登場します！
 
 ## 最長増加部分列の長さが 2 以下の順列

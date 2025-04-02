@@ -4,7 +4,6 @@ date: 2024-12-02
 showTableOfContents: true
 ---
 
-{{< katex >}}
 この記事は[日曜数学 Advent Calendar 2024](https://adventar.org/calendars/9972) の 2 日目の記事です。
 
 数学の世界には二項係数を含む等式がたくさんあります。例えば
@@ -69,7 +68,7 @@ $$
 
 $$
 \begin{align*}
-f(x)&=\sum_{k=0}^{\infty}\sum_{m=0}^{\infty}\binom{m}{k}x^{m+k} \\\
+f(x)&=\sum_{k=0}^{\infty}\sum_{m=0}^{\infty}\binom{m}{k}x^{m+k} \\
 &= \sum_{k=0}^{\infty}x^k\sum_{m=0}^{\infty}\binom{m}{k}x^m
 \end{align*}
 $$
@@ -78,8 +77,8 @@ $$
 
 $$
 \begin{align*}
-f(x)&=\sum_{k=0}^{\infty}x^k(1+x)^k \\\
-&= \sum_{k=0}^{\infty}(x+x^2)^k \\\
+f(x)&=\sum_{k=0}^{\infty}x^k(1+x)^k \\
+&= \sum_{k=0}^{\infty}(x+x^2)^k \\
 &= \frac{1}{1-x-x^2}
 \end{align*}
 $$
@@ -110,8 +109,8 @@ $$
 
 $$
 \begin{align*}
-f(x) &= \sum_{k=0}^{\infty}\sum_{n=k}^{\infty}\binom{r+k}{r}x^n \\\
-&= \sum_{k=0}^{\infty}\binom{r+k}{r}\frac{x^k}{1-x} \\\
+f(x) &= \sum_{k=0}^{\infty}\sum_{n=k}^{\infty}\binom{r+k}{r}x^n \\
+&= \sum_{k=0}^{\infty}\binom{r+k}{r}\frac{x^k}{1-x} \\
 &= \frac{1}{1-x}\sum_{k=0}^{\infty}\binom{r+k}{r}x^k
 \end{align*}
 $$
@@ -148,8 +147,8 @@ $$
 
 $$
 \begin{align*}
-f(x) &= \sum_{k=0}^{\infty}\sum_{n=k}^{\infty}\binom{2k}{k}\binom{2(n-k)}{n-k}x^n \\\
-&= \sum_{k=0}^{\infty}\binom{2k}{k}x^k\sum_{n=k}^{\infty}\binom{2(n-k)}{n-k}x^{n-k} \\\
+f(x) &= \sum_{k=0}^{\infty}\sum_{n=k}^{\infty}\binom{2k}{k}\binom{2(n-k)}{n-k}x^n \\
+&= \sum_{k=0}^{\infty}\binom{2k}{k}x^k\sum_{n=k}^{\infty}\binom{2(n-k)}{n-k}x^{n-k} \\
 &= \left(\sum_{k=0}^{\infty}\binom{2k}{k}x^k\right)^2
 \end{align*}
 $$
@@ -188,9 +187,9 @@ $$
 
 $$
 \begin{align*}
-f(x) &= \sum_{m\ge 0}\sum_{k=0}^m\frac{(-1)^k}{2k+1}\binom{m}{k}x^m \\\
-&= \sum_{k\ge 0}\sum_{m\ge k}\frac{(-1)^k}{2k+1}\binom{m}{k}x^m \\\
-&= \sum_{k\ge 0}\frac{(-1)^k}{2k+1}x^k\sum_{n\ge 0}\binom{n+k}{k}x^n \\\
+f(x) &= \sum_{m\ge 0}\sum_{k=0}^m\frac{(-1)^k}{2k+1}\binom{m}{k}x^m \\
+&= \sum_{k\ge 0}\sum_{m\ge k}\frac{(-1)^k}{2k+1}\binom{m}{k}x^m \\
+&= \sum_{k\ge 0}\frac{(-1)^k}{2k+1}x^k\sum_{n\ge 0}\binom{n+k}{k}x^n \\
 &= \sum_{k\ge 0}\frac{(-1)^k}{2k+1}x^k\cdot \frac{1}{(1-x)^{k+1}}
 \end{align*}
 $$
@@ -213,12 +212,12 @@ $$
 
 $$
 \begin{align*}
-g(x) &= \sum_{m\ge 0}\sum_{k=0}^m(2m+3)\frac{(-1)^k}{2k+3}\binom{m}{k}x^m \\\
-&= \sum_{k\ge 0}\sum_{m\ge k}(2m+3)\frac{(-1)^k}{2k+3}\binom{m}{k}x^m \\\
-&= \sum_{k\ge 0}\frac{(-1)^k}{2k+3}\left[2\frac{x^k(k+x)}{(1-x)^{k+2}}+3\frac{x^k}{(1-x)^{k+1}}\right] \\\
-&= \sum_{k\ge 0}\frac{(-1)^k}{2k+3}\frac{x^k(2k+3-x)}{(1-x)^{k+2}} \\\
-&= \sum_{k\ge 0}(-1)^k\frac{x^k}{(1-x)^{k+2}}+\sum_{k\ge 0}\frac{(-1)^{k+1}}{2k+3}\frac{x^{k+1}}{(1-x)^{k+2}} \\\
-&= \frac{1}{1-x}+\sum_{k\ge 1}\frac{(-1)^k}{2k+1}\frac{x^k}{(1-x)^{k+1}} \\\
+g(x) &= \sum_{m\ge 0}\sum_{k=0}^m(2m+3)\frac{(-1)^k}{2k+3}\binom{m}{k}x^m \\
+&= \sum_{k\ge 0}\sum_{m\ge k}(2m+3)\frac{(-1)^k}{2k+3}\binom{m}{k}x^m \\
+&= \sum_{k\ge 0}\frac{(-1)^k}{2k+3}\left[2\frac{x^k(k+x)}{(1-x)^{k+2}}+3\frac{x^k}{(1-x)^{k+1}}\right] \\
+&= \sum_{k\ge 0}\frac{(-1)^k}{2k+3}\frac{x^k(2k+3-x)}{(1-x)^{k+2}} \\
+&= \sum_{k\ge 0}(-1)^k\frac{x^k}{(1-x)^{k+2}}+\sum_{k\ge 0}\frac{(-1)^{k+1}}{2k+3}\frac{x^{k+1}}{(1-x)^{k+2}} \\
+&= \frac{1}{1-x}+\sum_{k\ge 1}\frac{(-1)^k}{2k+1}\frac{x^k}{(1-x)^{k+1}} \\
 &= \sum_{k\ge 0}\frac{(-1)^k}{2k+1}\frac{x^k}{(1-x)^{k+1}}
 \end{align*}
 $$

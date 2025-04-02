@@ -4,8 +4,6 @@ date: 2024-12-21
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 翌日、空き教室にて。
 
 「今日はレッスンじゃないんだね」

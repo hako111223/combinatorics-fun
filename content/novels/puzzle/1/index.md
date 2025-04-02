@@ -4,8 +4,6 @@ date: 2024-12-21
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 「篠澤さん、それは何ですか？」
 
 「あ、プロデューサーだ」

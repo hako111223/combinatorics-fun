@@ -4,7 +4,6 @@ date: 2024-02-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は転倒数が $k$ に等しい順列の個数を求めたいと思います。
 
 ## 転倒数
@@ -95,10 +94,10 @@ $$
 
 $$
 \begin{align*}
-f_{n+1}(z) &= \sum_{k\ge 0}b(n+1,k)z^k \\\
-&= \sum_{k\ge 0}(b(n,k)+b(n,k-1)+\cdots+b(n,k-n))z^k \\\
-&= \sum_{k\ge 0}b(n,k)(z^k+z^{k+1}+\cdots+z^{k+n}) \\\
-&= (1+z+z^2+\cdots+z^n)\sum_{k\ge 0}b(n,k)z^k \\\
+f_{n+1}(z) &= \sum_{k\ge 0}b(n+1,k)z^k \\
+&= \sum_{k\ge 0}(b(n,k)+b(n,k-1)+\cdots+b(n,k-n))z^k \\
+&= \sum_{k\ge 0}b(n,k)(z^k+z^{k+1}+\cdots+z^{k+n}) \\
+&= (1+z+z^2+\cdots+z^n)\sum_{k\ge 0}b(n,k)z^k \\
 &= (1+z+z^2+\cdots+z^n)f_n(z)
 \end{align*}
 $$
@@ -129,7 +128,7 @@ $b(n,k)$ の母関数は
 
 $$
 \begin{align*}
-f_n(z) &= (1+z)(1+z+z^2)\cdots (1+z+z^2+\cdots+z^{n-1}) \\\
+f_n(z) &= (1+z)(1+z+z^2)\cdots (1+z+z^2+\cdots+z^{n-1}) \\
 &= \prod_{j=1}^n \frac{1-z^j}{1-z}
 \end{align*}
 $$
@@ -146,9 +145,11 @@ $$
 
 {{< alert "lightbulb" >}}
 **定理**: $n\ge k$ とする。転倒数が $k$ である長さ $n$ の順列の個数は
+
 $$
 b(n,k)=\sum_j(-1)^j\binom{n+k-d_j-1}{k-d_j}
 $$
+
 に等しい。ここで $j$ は五角数 $d_j=(3j^2+j)/2$ が $k$ 以下となる範囲を動く。
 {{< /alert >}}
 

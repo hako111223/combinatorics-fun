@@ -12,34 +12,42 @@ autoSwitchAppearance = true
 enableSearch = true
 enableCodeCopy = false
 
+replyByEmail = false
+
 mainSections = ["natori", "kumialab", "posts"]
 # robots = ""
 
 disableImageOptimization = false
+disableTextInHeader = false
+# backgroundImageWidth = 1200
 
-defaultFeaturedImage = "images/logo.png" # used as default for featured images in all articles
+# defaultBackgroundImage = "IMAGE.jpg" # used as default for background images 
+defaultFeaturedImage = "images/logo.png"
 
 # highlightCurrentMenuArea = true
 # smartTOC = true
 # smartTOCHideUnfocusedChildren = true
 
+giteaDefaultServer = "https://git.fsfe.org"
+forgejoDefaultServer = "https://v8.next.forgejo.org"
+
 [header]
-  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-fill-blur
+  layout = "basic" # valid options: basic, fixed, fixed-fill, fixed-gradient, fixed-fill-blur
 
 [footer]
   showMenu = true
   showCopyright = true
   showThemeAttribution = true
-  showAppearanceSwitcher = false
+  showAppearanceSwitcher = true
   showScrollToTop = true
 
 [homepage]
-  layout = "background" # valid options: page, profile, hero, card, background, custom
-  homepageImage = "images/PXL_20230320_055424582.jpg" # used in: hero, and card
+  layout = "hero" # valid options: page, profile, hero, card, background, custom
+  homepageImage = "images/PXL_20250331_033532502.jpg" # used in: hero, and card
   showRecent = true
   showRecentItems = 6
   showMoreLink = false
-  showMoreLinkDest = "/posts"
+  showMoreLinkDest = "/posts/"
   cardView = true
   cardViewScreenWidth = false
   layoutBackgroundBlur = false # only used when layout equals background
@@ -48,8 +56,10 @@ defaultFeaturedImage = "images/logo.png" # used as default for featured images i
   showDate = true
   showViews = false
   showLikes = false
+  showDateOnlyInArticle = false
   showDateUpdated = false
   showAuthor = true
+  # showAuthorBottom = false
   showHero = true
   # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
@@ -70,9 +80,9 @@ defaultFeaturedImage = "images/logo.png" # used as default for featured images i
   showTaxonomies = false
   showAuthorsBadges = false
   showWordCount = false
-  showSummary = true
-  sharingLinks = [ "twitter" ]
-  # sharingLinks = [ "linkedin", "twitter", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  sharingLinks = [ "twitter", "bluesky", "mastodon" ]
+  # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
+  showZenMode = true
 
 [list]
   showHero = false
@@ -85,6 +95,7 @@ defaultFeaturedImage = "images/logo.png" # used as default for featured images i
   showLikes = false
   showTableOfContents = false
   showCards = false
+  orderByWeight = false
   groupByYear = true
   cardView = false
   cardViewScreenWidth = false
@@ -127,6 +138,17 @@ defaultFeaturedImage = "images/logo.png" # used as default for featured images i
   # site = "ABC12345"
   # domain = "llama.yoursite.com"
 
+[umamiAnalytics]
+  # websiteid = "ABC12345"
+  # domain = "llama.yoursite.com"
+  # dataDomains = "yoursite.com,yoursite2.com"
+  # scriptName = ""
+  # enableTrackEvent = true
+
+[selineAnalytics]
+  # token = "XXXXXX"
+  # enableTrackEvent = true
+
 [buymeacoffee]
   # identifier = ""
   # globalWidget = true
@@ -139,3 +161,8 @@ defaultFeaturedImage = "images/logo.png" # used as default for featured images i
   # bing = ""
   # pinterest = ""
   # yandex = ""
+  # fediverse = ""
+
+[rssnext]
+  # feedId = ""
+  # userId = ""

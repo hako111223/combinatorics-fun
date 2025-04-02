@@ -6,7 +6,6 @@ authors:
   - "kumia"
 ---
 
-{{< katex >}}
 みなさん、combanwa～！組合せ論系 VTuber の早稲くみあです！
 
 ![](./featured.png)

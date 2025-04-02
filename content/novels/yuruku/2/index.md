@@ -4,8 +4,6 @@ date: 2024-04-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## 発表
 
 夏堂美澄「さて、ドーナツも配ったことだし、そろそろ発表を聞こうか」

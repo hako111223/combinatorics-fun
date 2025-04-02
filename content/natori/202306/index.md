@@ -4,7 +4,6 @@ date: 2023-06-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は対称多項式の世界に足を踏み入れてみましょう。
 
 ## シューア多項式
@@ -28,7 +27,7 @@ $$
 厳密な定義はこうです。$\lambda$ を分割とするとき
 
 $$
-m_{\lambda}(x)=\sum_{\mu:\lambda の並べ替え}x^{\mu}
+m_{\lambda}(x)=\sum_{\mu:\lambda \text{の並べ替え}}x^{\mu}
 $$
 
 と定義します。ここで $x^{\mu}=x_1^{\mu_1}\cdots x_n^{\mu_n}$ です。

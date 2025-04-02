@@ -4,8 +4,6 @@ date: 2023-09-22
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 SUZURIで組合せ論ショップを開設しました！
 
 https://suzuri.jp/combinatorics

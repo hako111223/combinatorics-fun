@@ -4,7 +4,6 @@ date: 2023-04-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回はカタラン数と畳み込みについて考えます。
 
 ## カタラン数の基礎
@@ -64,9 +63,11 @@ $$
 
 {{< alert "lightbulb" >}}
 **定理**: $\phi(u)=\sum_{k\ge 0}\phi_ku^k$ は $\phi_0\ne 0$ をみたすとし、$y=y(x)$ は $y=x\phi(y)$ をみたすとする。このとき
+
 $$
 [x^n]y(x)^k=\frac{k}{n}[u^{n-k}]\phi(u)^n
 $$
+
 が成り立つ。
 {{< /alert >}}
 

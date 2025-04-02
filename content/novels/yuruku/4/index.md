@@ -4,8 +4,6 @@ date: 2024-05-07
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 ## 再会
 
 夏堂美澄「ようこそ」

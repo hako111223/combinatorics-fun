@@ -4,7 +4,6 @@ date: 2023-07-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は美しく輝く公式の 1 つ、平面分割の母関数について考えていきます。
 
 ## 平面分割の母関数
@@ -19,9 +18,9 @@ showTableOfContents: true
 
 $$
 \begin{pmatrix}
-3 & 2 & 1 & 0 & \cdots \\\
-1 & 1 & 0 & 0 & \cdots \\\
-0 & 0 & 0 & 0 & \cdots \\\
+3 & 2 & 1 & 0 & \cdots \\
+1 & 1 & 0 & 0 & \cdots \\
+0 & 0 & 0 & 0 & \cdots \\
 \vdots & \vdots & \vdots & \vdots & \ddots
 \end{pmatrix}
 $$
@@ -36,9 +35,11 @@ $n$ の平面分割の個数を $pp(n)$ とおきます。今回証明するの�
 
 {{< alert "lightbulb" >}}
 **定理**: 平面分割の母関数は
+
 $$
 \sum_{n=0}^{\infty}pp(n)x^n=\prod_{m=1}^{\infty}\frac{1}{(1-x^m)^m}
 $$
+
 {{< /alert >}}
 
 この公式は**マクマホンの公式**とも呼ばれています。
@@ -59,10 +60,10 @@ $$
 
 $$
 \begin{pmatrix}
-5 & 4 & 2 & 1 & \cdots \\\
-3 & 3 & 1 & 1 & \cdots \\\
-2 & 1 & 1 & 0 & \cdots \\\
-2 & 1 & 0 & 0 & \cdots \\\
+5 & 4 & 2 & 1 & \cdots \\
+3 & 3 & 1 & 1 & \cdots \\
+2 & 1 & 1 & 0 & \cdots \\
+2 & 1 & 0 & 0 & \cdots \\
 \vdots & \vdots & \vdots & \vdots & \ddots
 \end{pmatrix}
 $$
@@ -78,7 +79,7 @@ $$
 これを数式で書くと、平面分割は
 
 $$
-\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\\}
+\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\}
 $$
 
 と同一視されます。$m,n$ を固定すれば、これは 0 でない成分だけを見たとき $m\times n$ 長方形の内部に含まれる平面分割となります。
@@ -108,7 +109,7 @@ $$
 実は $(2)\prec (3,2)\prec (4,3,1)\prec (5,4,2,1)$ という交錯関係があります。このように、半標準タブローの集合 $\mathrm{SSYT}(\lambda,n)$ は
 
 $$
-\\{(0)=\lambda^{(0)}\prec\lambda^{(1)}\prec\cdots\prec\lambda^{(n)}=\lambda\\}
+\{(0)=\lambda^{(0)}\prec\lambda^{(1)}\prec\cdots\prec\lambda^{(n)}=\lambda\}
 $$
 
 と同一視されます。ここで $\lambda^{(i)}$ は $i$ 以下の数のみに注目して得られる半標準タブローです。
@@ -132,7 +133,7 @@ $$
 平面分割を
 
 $$
-\\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\\}
+\{(0)=\lambda^{(0)}\prec \lambda^{(1)}\prec\cdots\prec \lambda^{(m)}=\mu^{(n)}\succ\cdots \succ\mu^{(1)}\succ\mu^{(0)}=(0)\}
 $$
 
 と見たとき、箱の数は
@@ -152,7 +153,7 @@ $$
 が成り立ちます。ここで右辺の和は
 
 $$
-\\{(0)=\lambda^{(0)}\prec\lambda^{(1)}\prec\cdots\prec\lambda^{(n)}=\lambda\\}
+\{(0)=\lambda^{(0)}\prec\lambda^{(1)}\prec\cdots\prec\lambda^{(n)}=\lambda\}
 $$
 
 に関するものです。$x_i=q^{m-i+1/2}$ を代入することで
@@ -165,7 +166,7 @@ $$
 
 $$
 \begin{align*}
-\sum q^{|\lambda^{(1)}|+\cdots+|\lambda^{(m-1)}|+|\mu^{(1)}|+\cdots+|\mu^{(n-1)}|+\frac12(|\lambda^{(m)}|+|\mu^{(n)}|)} &= \prod_{i=1}^m\prod_{j=1}^n\frac{1}{1-q^{m+n-i-j+1}} \\\
+\sum q^{|\lambda^{(1)}|+\cdots+|\lambda^{(m-1)}|+|\mu^{(1)}|+\cdots+|\mu^{(n-1)}|+\frac12(|\lambda^{(m)}|+|\mu^{(n)}|)} &= \prod_{i=1}^m\prod_{j=1}^n\frac{1}{1-q^{m+n-i-j+1}} \\
 &= \prod_{i=1}^m\prod_{j=1}^n\frac{1}{1-q^{i+j-1}}
 \end{align*}
 $$

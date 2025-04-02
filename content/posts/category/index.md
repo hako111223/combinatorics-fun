@@ -4,7 +4,6 @@ date: 2024-12-24
 showTableOfContents: true
 ---
 
-{{< katex >}}
 この記事は[圏論 Advent Calendar 2024](https://adventar.org/calendars/10265) の 24 日目の記事です。
 
 とある本で次のような記述があったようです：環 $R_1,\ldots,R_n$ の直積集合 $R_1\times\cdots\times R_n$ 上に加法と乗法を
@@ -41,7 +40,7 @@ $(M_{\lambda}) _ {\lambda\in\Lambda}$ を左 $R$ 加群の族とします。$(M_
 また、$(M_{\lambda})_{\lambda\in\Lambda}$ の直和を、集合
 
 $$
-\\{(x_{\lambda}) _ {\lambda}\in \prod _ {\lambda\in\Lambda}M_{\lambda}\mid \text{有限個を除いた} \lambda\in\Lambda \text{に対して} x_{\lambda}=0 \\}
+\{(x_{\lambda}) _ {\lambda}\in \prod _ {\lambda\in\Lambda}M_{\lambda}\mid \text{有限個を除いた} \lambda\in\Lambda \text{に対して} x_{\lambda}=0 \}
 $$
 
 に同様の演算を定めたものとし、$\bigoplus_{\lambda\in\Lambda}M_{\lambda}$ で表します。$i_{\mu}\colon M_{\mu}\to \bigoplus_{\lambda\in\Lambda}M_{\lambda}$ も定めます。これは $R$-$\mathbf{Mod}$ における和となります。

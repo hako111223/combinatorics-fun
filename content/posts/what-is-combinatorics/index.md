@@ -4,7 +4,6 @@ date: 2024-12-05
 showTableOfContents: true
 ---
 
-{{< katex >}}
 組合せ論とは何か、組合せ論的な証明とは何かについて考えていきます。
 
 この記事はもともと月刊組合せ論 Natori の一部となる予定でしたが、[組合せ論 Advent Calendar 2024](https://adventar.org/calendars/10062) の 5 日目の記事として公開することにしました。

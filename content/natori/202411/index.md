@@ -4,7 +4,6 @@ date: 2024-11-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は彩色対称関数に関する未解決問題である Stanley-Stembridge 予想を紹介します。
 
 ## 彩色対称関数
@@ -15,7 +14,7 @@ showTableOfContents: true
 
 グラフ $G=(V,E)$ の彩色多項式 $c_G(n)$ とは、グラフの頂点を $n$ 色のうちのいずれかで塗る方法であって、隣り合う 2 頂点が異なる色で塗られているものの個数です。
 
-彩色対称関数は Stanley によって導入されました。色の集合を $\mathbb{P}=\\{1,2,\ldots\\}$ とします。色塗りのことを関数 $\kappa\colon V\to\mathbb{P}$ だと思うことにします。$x=(x_1,x_2,\ldots)$ を変数とします。彩色対称関数は
+彩色対称関数は Stanley によって導入されました。色の集合を $\mathbb{P}=\{1,2,\ldots\}$ とします。色塗りのことを関数 $\kappa\colon V\to\mathbb{P}$ だと思うことにします。$x=(x_1,x_2,\ldots)$ を変数とします。彩色対称関数は
 
 $$
 X_G(x)=\sum_{\kappa}\prod_{v\in V}x_{\kappa(v)}

@@ -4,7 +4,6 @@ date: 2025-01-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は組合せ論の有名な未解決問題である $\frac13$-$\frac23$ 予想を解説します。
 
 あけましておめでとうございます。去年の 12 月はアドベントカレンダーでたくさん記事を書きましたが、今年もたくさん書いていきたいです。
@@ -33,9 +32,11 @@ showTableOfContents: true
 
 {{< alert "lightbulb" >}}
 **予想**: チェインでない poset において
+
 $$
 \frac13\le \mathbf{P}(x\le y)\le \frac23
 $$
+
 となる $x,y$ が存在する。
 {{< /alert >}}
 

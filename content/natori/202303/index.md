@@ -4,7 +4,6 @@ date: 2023-03-01
 showTableOfContents: true
 ---
 
-{{< katex >}}
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は組合せ論・対称関数論を中心に幅広く活躍するシューア多項式について語っていきます。
 
 ## 半標準タブロー
@@ -50,8 +49,8 @@ $$
 
 $$
 \begin{align*}
-\Delta_1&=\det\begin{pmatrix} x_1^4 & x_2^4 \\\ x_1 & x_2 \end{pmatrix} \\\
-\Delta_2&=\det\begin{pmatrix} x_1 & x_2 \\\ 1 & 1 \end{pmatrix}
+\Delta_1&=\det\begin{pmatrix} x_1^4 & x_2^4 \\ x_1 & x_2 \end{pmatrix} \\
+\Delta_2&=\det\begin{pmatrix} x_1 & x_2 \\ 1 & 1 \end{pmatrix}
 \end{align*}
 $$
 
@@ -59,7 +58,7 @@ $$
 
 $$
 \begin{align*}
-\Delta_1 &= x_1^4x_2-x_1x_2^4=x_1x_2(x_1-x_2)(x_1^2+x_1x_2+x_2^2) \\\
+\Delta_1 &= x_1^4x_2-x_1x_2^4=x_1x_2(x_1-x_2)(x_1^2+x_1x_2+x_2^2) \\
 \Delta_2 &= x_1-x_2
 \end{align*}
 $$
@@ -92,13 +91,15 @@ $$
 
 {{< alert "lightbulb" >}}
 **定理** (LGV): 条件「$i_1<i_2, j_1>j_2$ ならば $a_{i_1}$ から $b_{j_1}$ へのパスと $a_{i_2}$ から $b_{j_2}$ へのパスは必ず交わる」を仮定する。このとき
+
 $$
 \det M(a,b)=\sum_{(P_1,\ldots,P_n)}w(P_1)\cdots w(P_n)
 $$
+
 が成り立つ。ここで和は $P_i$ が $a_i$ から $b_i$ へのパスでどの 2 つも互いに交わらないもの全体をわたる。
 {{< /alert >}}
 
-グラフを次のように構成します。$V=\\{(i,j)\in\mathbb{Z}^2\mid 1\le i\le (十分大きな値), 1\le j\le n\\}$ とし、$(i,j)$ から $(i+1,j)$ に重み $x_j$ の辺を張り、$(i,j)$ から $(i,j+1)$ に重み 1 の辺を張ります。
+グラフを次のように構成します。$V=\{(i,j)\in\mathbb{Z}^2\mid 1\le i\le \text{(十分大きな値)}, 1\le j\le n\}$ とし、$(i,j)$ から $(i+1,j)$ に重み $x_j$ の辺を張り、$(i,j)$ から $(i,j+1)$ に重み 1 の辺を張ります。
 
 このとき、$\sum_{P:(i,1)\to (i+k,n)}w(P)=h_k(x)$ となります。
 

@@ -4,8 +4,6 @@ date: 2023-12-25
 showTableOfContents: true
 ---
 
-{{< katex >}}
-
 この記事は[表現論 Advent Calendar 2023](https://adventar.org/calendars/8636) の 25 日目の記事です。
 
 まずは通常のシンプレクティック群の紹介から始めて、奇数次元のシンプレクティック群を紹介します。
@@ -13,19 +11,19 @@ showTableOfContents: true
 ## シンプレクティック群
 
 $$
-J_n=\begin{pmatrix} 0 & 1 & & & & & \\\ -1 & 0 & & & & & \\\ & & 0 & 1 & & & \\\ & & -1 & 0 & & & \\\ & & & & \ddots & & \\\ & & & & & 0 & 1 \\\ & & & & & -1 & 0 \end{pmatrix}
+J_n=\begin{pmatrix} 0 & 1 & & & & & \\ -1 & 0 & & & & & \\ & & 0 & 1 & & & \\ & & -1 & 0 & & & \\ & & & & \ddots & & \\ & & & & & 0 & 1 \\ & & & & & -1 & 0 \end{pmatrix}
 $$
 
 とおきます。これは $2n$ 次の正方行列です。空白の部分はすべて 0 です。
 
 $$
-Sp_{2n}(\mathbb{C})=\\{g\in SL_{2n}(\mathbb{C})\mid {}^tgJ_ng=J_n\\}
+Sp_{2n}(\mathbb{C})=\{g\in SL_{2n}(\mathbb{C})\mid {}^tgJ_ng=J_n\}
 $$
 
 を複素シンプレクティック群といいます。これは複素リー群となります。対応するリー環は
 
 $$
-\mathfrak{sp} _ {2n}(\mathbb{C})=\\{X\in\mathfrak{sl}_{2n}(\mathbb{C})\mid {}^tXJ_n+J_nX=O\\}
+\mathfrak{sp} _ {2n}(\mathbb{C})=\{X\in\mathfrak{sl}_{2n}(\mathbb{C})\mid {}^tXJ_n+J_nX=O\}
 $$
 
 です。
@@ -37,13 +35,13 @@ $$
 シンプレクティック群といえば通常は偶数次元ですが、奇数次元のシンプレクティック群を Proctor が導入しました。それは次のようなものです。
 
 $$
-Sp_{2n+1}(\mathbb{C})=\begin{pmatrix} & & & 0 \\\ & Sp_{2n}(\mathbb{C}) & & \vdots \\\ & & & 0 \\\ * & \cdots & * & z \end{pmatrix}
+Sp_{2n+1}(\mathbb{C})=\begin{pmatrix} & & & 0 \\ & Sp_{2n}(\mathbb{C}) & & \vdots \\ & & & 0 \\ * & \cdots & * & z \end{pmatrix}
 $$
 
 ここで $z$ は 0 でない複素数です。より一般に
 
 $$
-Sp_{2n,m}(\mathbb{C})=\begin{pmatrix} Sp_{2n}(\mathbb{C}) & O \\\ * & GL_m(\mathbb{C}) \end{pmatrix}
+Sp_{2n,m}(\mathbb{C})=\begin{pmatrix} Sp_{2n}(\mathbb{C}) & O \\ * & GL_m(\mathbb{C}) \end{pmatrix}
 $$
 
 を intermediate シンプレクティック群といいます。

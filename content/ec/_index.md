@@ -6,7 +6,7 @@ title: "いーしー部！"
 
 いおり・しいなの設定については以下の記事をご覧ください。
 
-https://koboshi-kyopro.hatenablog.com/entry/2024/06/22/160044
+https://hakomonogatari.pages.dev/characters/ec/
 
 ## ぷろろーぐ！
 
