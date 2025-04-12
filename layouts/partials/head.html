@@ -46,10 +46,6 @@
   {{ $assets.Add "css" (slice $cssScheme) }}
   {{ $cssMain := resources.Get "css/compiled/main.css" }}
   {{ $assets.Add "css" (slice $cssMain) }}
-  
-  {{ $cssMain2 := resources.Get "css/output.css" }}
-  {{ $assets.Add "css" (slice $cssMain2) }}
-
   {{ $cssCustom := resources.Get "css/custom.css" }}
   {{ if $cssCustom }}
   {{ $assets.Add "css" (slice $cssCustom) }}

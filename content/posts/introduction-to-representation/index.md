@@ -67,13 +67,19 @@ $\mathbb{X}$ (Twitter) のハッシュタグ #私のイチ推し表現論本 を
 
 個人的なおススメ本を紹介します。勿論ここで紹介する本以外にもよい本はあると思うので、調べたり人に聞いたりしてみてください。
 
-### Steinberg, Benjamin. Representation theory of finite groups: an introductory approach. Springer, 2011.
+### その 1
+
+- Steinberg, Benjamin. Representation theory of finite groups: an introductory approach. Springer, 2011.
 
 筆者はこの本で表現論に入門しました。線形代数と群を知っている人を対象に、複素数体上の有限群の表現論を平易に解説します。
 
-書評はこちらにあります：https://www.jstage.jst.go.jp/article/sugaku/70/2/70_0702212/_article/-char/ja/
+書評はこちらにあります。
 
-### 池田岳, テンソル代数と表現論, 東京大学出版会, 2022.
+https://www.jstage.jst.go.jp/article/sugaku/70/2/70_0702212/_article/-char/ja/
+
+### その 2
+
+- 池田岳, テンソル代数と表現論, 東京大学出版会, 2022.
 
 最近出た表現論の本です。1 年生で学ぶ線形代数の続きとして、対称群や一般線形群の表現論を学びます。最後にはリー代数の話もあります。上の本よりは難しい気もしますが、丁寧に読むことで本格的な数学に入門できると思います。
 

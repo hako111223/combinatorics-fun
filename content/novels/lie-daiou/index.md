@@ -6,9 +6,9 @@ showTableOfContents: true
 
 鶴崎さんが同人誌化 OK とのことで勢いで作ったものです。問題があれば削除します。
 
-https://x.com/Tsurusaki_H/status/1873591940115272133
+{{< x user="Tsurusaki_H" id="1873591940115272133" >}}
 
-https://x.com/Tsurusaki_H/status/1873638698698580368
+{{< x user="Tsurusaki_H" id="1873638698698580368" >}}
 
 ---
 
