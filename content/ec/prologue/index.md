@@ -1,5 +1,5 @@
 ---
-title: "【いーしー部！】はじまり【ぷろろーぐ！】"
+title: "【いーしー部！】はじまり【ぷろろーぐ！その１】"
 date: 2024-07-13
 showTableOfContents: true
 ---

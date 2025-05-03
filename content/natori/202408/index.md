@@ -67,7 +67,7 @@ $(1,2,\ldots,n)$ の順列 $A$ に対して、**増加部分列**とは $i_1<i_2
 
 123-avoiding な順列と 132-avoiding な順列の間に全単射を構成します。
 
-[2024 年 6 月号](https://combinatorics-fun.vercel.app/natori/202406/)でも紹介した Rothe diagram を考えます。下の図は 132-avoiding な順列 6743521 に対する Rothe diagram です。
+[2024 年 6 月号](../202406/)でも紹介した Rothe diagram を考えます。下の図は 132-avoiding な順列 6743521 に対する Rothe diagram です。
 
 ![image](./HJRvQIUKA.png)
 

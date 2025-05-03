@@ -1,5 +1,5 @@
 ---
-title: "【いーしー部！】くみあせんせー【ぷろろーぐ！２】"
+title: "【いーしー部！】くみあせんせー【ぷろろーぐ！その２】"
 date: 2024-09-18
 showTableOfContents: true
 ---
@@ -7,7 +7,7 @@ showTableOfContents: true
 Enumerative Combinatorics を読み始めたいおりとしいな。そんな 2 人の前に、困難が立ちはだかる。
 
 {{< speech img="../img/iori.png" name="いおり" >}}
-ぴえ～～～～～。わかんない～～～～～！
+ぴえ～～～～～！わかんない～～～～～！
 {{< /speech >}}
 
 {{< speech img="../img/shiina.png" name="しいな" >}}

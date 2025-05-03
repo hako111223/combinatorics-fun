@@ -19,6 +19,7 @@ title: "数学記事・PDF"
 - [de Bruijn-Erdős の定理（グラフ理論）](./dbe/) : Mathematical Logic Advent Calendar 2024 の 19 日目の記事です。
 - [圏における和と積](./category/) : 圏論 Advent Calendar 2024 の 24 日目の記事です。
 - [クリス Math なのでプレゼントボックスを用意しました！(Keller の予想)](./keller/) : 組合せ論 Advent Calendar 2024 の 25 日目の記事です。
+- [ゴールデンウィークなので黄金比とグラフ理論の話をします](./golden-graph/) : グラフの固有値と黄金比の関係についてです。
 
 ## PDF
 

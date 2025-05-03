@@ -36,7 +36,7 @@ inv や maj と同分布である量は Mahonian statistics と呼ばれます�
 
 転倒数が $k$ に等しい長さ $n$ の順列の個数 $b(n,k)$ については 2024 年 2 月号の Natori に書きました。
 
-[【月刊組合せ論 Natori】転倒数が k である順列の個数【2024 年 2 月号】](https://combinatorics-fun.vercel.app/natori/202402/)
+[【月刊組合せ論 Natori】転倒数が k である順列の個数【2024 年 2 月号】](../202402/)
 
 ここでは簡単に復習します。$b(n,k)$ の母関数を
 
