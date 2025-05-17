@@ -4,6 +4,10 @@ title: "いーしー部！"
 
 数え上げを探究するいおり・しいなによる活動記録です。
 
+いおり・しいなの設定については以下のサイトをご覧ください。
+
+https://hakomonogatari.pages.dev/characters/ec/
+
 ## ぷろろーぐ！
 
 - [はじまり](./prologue/)
@@ -13,7 +17,7 @@ title: "いーしー部！"
 
 Enumerative Combinatorics、通称 EC の第一章を読みます。
 
-（準備中）
+- [数え上げってなんだろう？](./season1-1/)
 
 ## こみっく！
 
