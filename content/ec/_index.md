@@ -4,6 +4,8 @@ title: "いーしー部！"
 
 数え上げを探究するいおり・しいなによる活動記録です。
 
+![image](./kazoeage-taisou.png)
+
 いおり・しいなの設定については以下のサイトをご覧ください。
 
 https://hakomonogatari.pages.dev/characters/ec/
