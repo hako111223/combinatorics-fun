@@ -109,9 +109,7 @@ $T$ が
 
 RS 対応の別の見方として、Viennot の geometric construction と呼ばれるものがあります。
 
-実際に遊んでみてください！
-
-https://www.integral-domain.org/lwilliams/Applets/Math/Viennot.php
+（ここに実際に遊べるサイトのリンクを張っていたんですが、サイトが無くなってしまいました……）
 
 ## ついに RSK 対応の登場です！
 

@@ -158,7 +158,7 @@ $$
 
 $$
 \begin{align*}
-&=\frac{1}{0!1!\cdots (n-1)!}\det[(\lambda_j+2n-i-j)\cdots (\lambda_j+n-j+1)] \
+&=\frac{1}{0!1!\cdots (n-1)!}\det[(\lambda_j+2n-i-j)\cdots (\lambda_j+n-j+1)] \\
 &=\frac{\det[(\lambda_j+n-j+1)^{i-1}]}{0!1!\cdots (n-1)!}
 \end{align*}
 $$
