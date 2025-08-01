@@ -52,16 +52,38 @@ Kohnert 図形は Rothe 図形において、ある行の最も右端のマス�
 
 転倒タブローと Kohnert 図形の間にウェイトを保つ全単射を構成します。
 
-転倒タブローが与えられたとき、$p_j$ 列目を $j$ 列目に移すことで Rothe 図形に数が書き込まれたものになります。$i$ が書かれているマスを $i$ 行目に落とすことで、Kohnert 図形が得られます。
+転倒タブローが与えられたとき、新しいタブローの $j$ 列目を転倒タブローの $p_j$ 列目とすることで Rothe 図形に数が書き込まれたものになります。$i$ が書かれているマスを $i$ 行目に落とすことで、Kohnert 図形が得られます。
 
 ![](./3.png)
 
 全単射になっている、気がしていますが未証明です。
+
+## poset 構造
+
+転倒タブローが導入された動機は、chute move poset と呼ばれるものが lattice であることを示すためであるようです。これについては後続のプレプリントで証明されています。
+
+- Ilani Axelrod-Freed, Colin Defant, Hanna Mularczyk, Son Nguyen, Katherine Tung. Chute Move Posets are Lattices. [arXiv:2507.13214
+](https://arxiv.org/abs/2507.13214)
+
+さらに後日、別の著者から別証明が投稿されました。
+
+- Sara C. Billey, Connor McCausland, Clare Minnerath. A Proof of Rubey's Lattice Conjecture. [arXiv:2507.18852](https://arxiv.org/abs/2507.18852)
+
+ところで、Kohnert 図形にも poset の構造が入ります。これについては lattice になるとは限らないようです。どのような違いがあるのでしょうか。
+
+2 つ目の文献から図を引用します。
+
+![](./4.png)
+
+パイプドリームと転倒タブローの間の全単射は文献の中で述べられており、上述の全単射で Kohnert 図形を得ます。すると次のようになりました。
+
+![](./5.png)
+
+おおむね Kohnert move と対応してそうですが、青い点線の部分が chute move poset にはないようです。
 
 ## 今後の課題
 
 - 本当に全単射か？そもそも well-defined か？
 - シューベルト多項式のモデルたちの間にはいろいろな全単射が知られている。これらは可換図式をなすか？これまでの全単射より簡単なものが得られるか？
 - bumpless pipe dream との関係はどうか？
-- 続くプレプリント Ilani Axelrod-Freed, Colin Defant, Hanna Mularczyk, Son Nguyen, Katherine Tung. Chute Move Posets are Lattices ([arXiv:2507.13214
-](https://arxiv.org/abs/2507.13214)) においても転倒タブローが登場するが、Kohnert 図形を用いて解釈することができるか？
+- Kohnert poset が lattice となるのはどのような場合か？Rothe 図形ならどうか？
