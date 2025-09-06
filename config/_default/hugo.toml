@@ -19,7 +19,7 @@ enableEmoji = true
 # googleAnalytics = "G-XXXXXXXXX"
 
 [pagination]
-  pagerSize = 100
+  pagerSize = 10
 
 [imaging]
   anchor = 'Center'
@@ -70,6 +70,11 @@ enableEmoji = true
 
 [markup]
   [markup.goldmark]
+    [markup.goldmark.renderHooks]
+      [markup.goldmark.renderHooks.link]
+        useEmbedded = 'always'
+      [markup.goldmark.renderHooks.image]
+        useEmbedded = 'always'
     [markup.goldmark.extensions]
       [markup.goldmark.extensions.passthrough]
         enable = true
