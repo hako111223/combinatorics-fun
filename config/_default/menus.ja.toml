@@ -31,11 +31,6 @@
   weight = 13
 
 [[main]]
-  name = "Gakuen"
-  pageRef = "gakuen"
-  weight = 14
-
-[[main]]
   name = "Posts"
   pageRef = "posts"
   weight = 15
