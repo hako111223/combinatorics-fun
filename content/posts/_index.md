@@ -22,3 +22,4 @@ title: "数学記事・PDF"
 - [伝説の入試問題と現代数学周遊](./1998/) : 1998 年東大後期数学第 3 問の解説です。
 - [夏休みの自由研究：inversions tableaux について](./inversions-tableaux/) : inversions tableaux に関する自由研究です。
 - [行列木定理で道路を調べる！](./road-network/) : 木 Advent Calendar 2025 の 2 日目の記事です。
+- [キューティーなカタラン数](./qt-catalan/) : 日曜数学 Advent Calendar 2025 の 7 日目の記事です。

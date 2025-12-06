@@ -87,7 +87,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showWordCount = false
   sharingLinks = [ "twitter", "bluesky", "mastodon" ]
   # sharingLinks = [ "linkedin", "twitter", "bluesky", "mastodon", "reddit", "pinterest", "facebook", "email", "whatsapp", "telegram"]
-  showZenMode = true
+  showZenMode = false
 
 [list]
   showHero = false
