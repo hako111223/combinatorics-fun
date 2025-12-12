@@ -23,3 +23,4 @@ title: "数学記事・PDF"
 - [夏休みの自由研究：inversions tableaux について](./inversions-tableaux/) : inversions tableaux に関する自由研究です。
 - [行列木定理で道路を調べる！](./road-network/) : 木 Advent Calendar 2025 の 2 日目の記事です。
 - [キューティーなカタラン数](./qt-catalan/) : 日曜数学 Advent Calendar 2025 の 7 日目の記事です。
+- [外積代数と行列木定理](./exterior-algebra/) : 木 Advent Calendar 2025 の 13 日目の記事です。
