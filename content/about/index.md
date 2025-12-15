@@ -22,7 +22,7 @@ date: 2025-12-04
 
 修士課程を修了しており、現在は社会人です。
 
-各種リンクは [lit.link](https://lit.link/hakoboshi) にまとめています。記事に間違い等があった場合の連絡はこちらからお願いします。（Twitter: hakoboshi_e がおすすめです。）
+各種リンクは [lit.link](https://lit.link/hakoboshi) にまとめています。記事に間違い等があった場合の連絡はこちらからお願いします。
 
 ### CV
 
@@ -65,3 +65,4 @@ date: 2025-12-04
 - 日本数学オリンピック　本選出場
 - 基本情報技術者試験　合格
 - JDLA Deep Learning for GENERAL 2022#3
+- 漢字検定準 1 級
