@@ -24,3 +24,4 @@ title: "数学記事・PDF"
 - [行列木定理で道路を調べる！](./road-network/) : 木 Advent Calendar 2025 の 2 日目の記事です。
 - [キューティーなカタラン数](./qt-catalan/) : 日曜数学 Advent Calendar 2025 の 7 日目の記事です。
 - [外積代数と行列木定理](./exterior-algebra/) : 木 Advent Calendar 2025 の 13 日目の記事です。
+- [すべての定理は組合せ論的に証明すべきである](./all-theorems-combinatorially/) : さまざまな定理の組合せ論的証明を扱います。
