@@ -1,0 +1,4 @@
+{{ $label := .Get "label" }}
+{{ $bibnum := site.Store.Get "bibnum" }}
+{{ $ref := index $bibnum $label }}
+[{{ $ref }}]

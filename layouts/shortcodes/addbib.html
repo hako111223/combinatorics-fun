@@ -1,0 +1,10 @@
+{{ $label := .Get "label" }}
+{{ $title := .Get "title" }}
+{{ $link := .Get "link" }}
+
+{{ site.Store.Add "bibcounter" 1 }}
+{{ $current := site.Store.Get "bibcounter" }}
+{{ site.Store.SetInMap "bibitem" $label $title }}
+{{ site.Store.SetInMap "biblink" $label $link }}
+{{ site.Store.SetInMap "bibnum" $label $current }}
+{{ site.Store.Add "biblabel" (slice $label) }}

@@ -1,0 +1,18 @@
+{{ $bibitem := site.Store.Get "bibitem" }}
+{{ $biblabel := site.Store.Get "biblabel" }}
+{{ $biblink := site.Store.Get "biblink" }}
+<ol>
+    {{ range $biblabel }}
+        {{ $item := index $bibitem . }}
+        {{ $link := index $biblink . }}
+        {{ if $link }}
+            <li>{{ $item }}, <a href={{ $link }}>{{ $link }}</a></li>
+        {{ else }}
+            <li>{{ $item }}</li>
+        {{ end }}
+    {{ end }}
+</ol>
+{{ site.Store.Delete "bibitem" }}
+{{ site.Store.Delete "bibnum" }}
+{{ site.Store.Delete "biblabel" }}
+{{ site.Store.Set "bibcounter" 0 }}

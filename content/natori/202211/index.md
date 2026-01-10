@@ -1,8 +1,15 @@
----
-title: "【月刊組合せ論 Natori】ルイス・キャロルと交代符号行列【2022 年 11 月号】"
-date: 2022-11-01
-showTableOfContents: true
----
++++
+title = "【月刊組合せ論 Natori】ルイス・キャロルと交代符号行列【2022 年 11 月号】"
+date = 2022-11-01
++++
+
+{{< addbib label="beh" title="Behrend, Roger. The Combinatorics of Alternating Sign Matrices" link="https://www.math.okayama-u.ac.jp/~mi/comb2018/talks/feb20/Behrend20180220final.pdf" >}}
+{{< addbib label="bre99" title="Bressoud, David M. Proofs and confirmations. The story of the alternating sign matrix conjecture. Cambridge University Press. xv, 274 p. (1999)." >}}
+{{< addbib label="bp99" title="Bressoud, David; Propp, James. How the Alternating Sign Matrix Conjecture Was Solved. Notices Am. Math. Soc. 1999." >}}
+{{< addbib label="fk20" title="Fischer, Ilse; Konvalinka, Matjaž. A bijective proof of the ASM theorem. I: The operator formula. Electron. J. Comb. 27, No. 3, Research Paper P3.35, 29 p. (2020)." >}}
+{{< addbib label="fk22" title="Fischer, Ilse; Konvalinka, Matjaž. A bijective proof of the ASM theorem. II: ASM enumeration and ASM-DPP relation. Int. Math. Res. Not. 2022, No. 10, 7203-7230 (2022)" >}}
+{{< addbib label="kup96" title="Kuperberg, Greg. Another proof of the alternating-sign matrix conjecture. Int. Math. Res. Not. 1996, No. 3, 139-150 (1996)." >}}
+{{< addbib label="zei96" title="Zeilberger, Doron. Proof of the alternating sign matrix conjecture. Electron. J. Comb. 3, No. 2, Research paper R13, 84 p. (1996);" >}}
 
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回の主役は交代符号行列と呼ばれるものです。
 
@@ -25,7 +32,7 @@ $$
 \end{pmatrix}
 $$
 
-3 行目に注目すると $1,-1,0,0,1$ となっており、和は 1 で、0 でない成分は符号が交互に変わっています。
+3 行目は $1,-1,0,0,1$ となっており、和は 1 で、0 でない成分に注目するとプラスとマイナスが交互に現れています。
 
 3 次の交代符号行列をすべて求めてみると、次の 7 通りがあることがわかります。
 
@@ -69,7 +76,7 @@ $$
 \end{align*}
 $$
 
-7 つのうち 6 つは置換行列です (各行各列に 1 が一つだけあり、その他が 0 である行列)。一般に置換行列は交代符号行列となっているので、置換行列の一般化であるとみなせます。
+7 つのうち 6 つは置換行列（各行各列に 1 が一つだけあり、その他が 0 である行列）です。一般に置換行列は交代符号行列となっているので、置換行列の一般化であるとみなせます。
 
 なぜこのような行列を考えるのでしょうか。そのルーツは、ルイス・キャロルにあります。
 
@@ -167,19 +174,17 @@ $$
 
 ## 行列式
 
-行列式と置換行列にはかかわりがあります。
+行列式と置換行列にはかかわりがあります。行列式の定義は
 
 $$
 \det(A)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)a_{1\sigma(1)}\cdots a_{n\sigma(n)}
 $$
 
-この式を行列式の定義とする場合もあります。
-
-$a_{1\sigma(1)}\cdots a_{n\sigma(n)}$ という項が現れますが、$(i,\sigma(i))$ 成分を 1 とし、その他の成分を 0 とした行列を考えるとこれは置換行列となります。
+です。$a_{1\sigma(1)}\cdots a_{n\sigma(n)}$ という項が現れますが、$(i,\sigma(i))$ 成分を 1 とし、その他の成分を 0 とした行列を考えるとこれは置換行列となります。置換と置換行列は一対一に対応します。
 
 ## 2×2 行列式の一般化
 
-$2\times 2$ の行列式は $ad-bc$ でした。これを $ad+\lambda bc$ に置き換えて Dodgson condensation を行うとどうなるでしょう。$3\times 3$ の場合に計算してみましょう。
+$2\times 2$ の行列式は $ad-bc$ でした。これを $ad+\lambda bc$ に置き換えて Dodgson condensation を行うとどうなるでしょう。$3\times 3$ の場合に計算してみましょう。まず
 
 $$
 A=\begin{pmatrix}
@@ -193,6 +198,8 @@ a_{31} & a_{32} & a_{33}
 \end{pmatrix}
 $$
 
+とします。操作を行うと
+
 $$
 A=\begin{pmatrix}
 a_{11}a_{22}+\lambda a_{12}a_{21} & a_{12}a_{23}+\lambda a_{13}a_{22} \\
@@ -201,7 +208,7 @@ a_{21}a_{32}+\lambda a_{22}a_{31} & a_{22}a_{33}+\lambda a_{23}a_{32}
 B=(a_{22})
 $$
 
-これより
+となります。よって
 
 $$
 \begin{align*}
@@ -259,7 +266,7 @@ $$
 
 ## 交代符号行列予想
 
-$n\times n$ の交代符号行列がいくつあるかという問題が次に生まれました。$n=3$ の場合は 7 つです。調べてみると、$1,2,7,42,429,\ldots$ という数列になります。(OEIS の A005130 です)
+$n\times n$ の交代符号行列がいくつあるかという問題が次に生まれました。$n=3$ の場合は 7 つです。調べてみると、$1,2,7,42,429,\ldots$ という数列になります。これは OEIS（オンライン整数列大辞典）の A005130 です。
 
 一般項は次のように表されるのではないかという予想がなされました。
 
@@ -275,58 +282,30 @@ $$
 
 きれいな形をしています。いかにも組合せ論的に証明できそうな雰囲気がありますが、実は非常に難しい予想だったのです。
 
-## 証明
+## 個数の等しいオブジェクト
 
-交代符号行列予想は Zeilberger により証明されました。
+交代符号行列の個数は
 
-Zeilberger, Doron. Proof of the alternating sign matrix conjecture. Electron. J. Comb. 3, No. 2, Research paper R13, 84 p. (1996) (https://www.combinatorics.org/ojs/index.php/eljc/article/view/v3i2r13)
+$$
+\prod_{j=0}^{n-1}\frac{(3j+1)!}{(n+j)!}
+$$
 
-論文をざっと眺めるだけでも感じ取れるように、非常に難解です。
+に等しいと予想されましたが、個数がこの式に等しいオブジェクトが他にもあります。
 
-## 四角い氷
+### Descending Plane Partition
 
-このような図を考えてみましょう。
-
-![](./Izm4X8z.png)
-
-平面上に水素原子と酸素原子が並んでいて、線でつないで $\mathrm{H}_2\mathrm{O}$ を作ります。これは square ice と呼ばれています。
-
-square ice において、このような操作を行いましょう。
-
-- 折れ曲がっている　→　$0$
-- 横向き　→　$+1$
-- 縦向き　→　$-1$
-
-この操作で行列を作ると、次のようになります。
+まずは Descending Plane Partition (DPP) を紹介します。次のようなものが例になっています。
 
 $$
 \begin{pmatrix}
-1 & 0 & 0 & 0 \\
-0 & 0 & 1 & 0 \\
-0 & 1 & -1 & 1 \\
-0 & 0 & 1 & 0
+8 & 7 & 7 & 7 & 2 & 1 \\
+ & 5 & 5 & 4 & & \\
+ & & 3 & 3 & & \\
+ & & & 2 & & \\
 \end{pmatrix}
 $$
 
-おわかりいただけたでしょうか。そう、交代符号行列です。実は交代符号行列と square ice は一対一に対応します。
-
-square ice は **6 頂点模型**と呼ばれるものと関連します。このように交代符号行列は物理とも関連します。実際、Kuperberg による交代符号行列予想の別証明も統計力学的なものでした。
-
-## 組合せ論的証明
-
-交代符号行列予想は証明されたわけですが、Combinatorialist としては組合せ論的な証明があるかどうかが気になりますよね。
-
-関連する話題として、Descending Plane Partition を紹介します。次のようなものが例になっています。
-
-| $8$ | $7$ | $7$ | $7$ | $2$ | $1$ |
-| -------- | -------- | -------- | - | - | - |
-| | $5$ | $5$ | $4$ | | |
-| | | $3$ | $3$ | | |
-| | | | $2$ | | |
-
-ヤングタブローでは左端が揃っていましたが、DPP では 1 つずつずらしています。
-
-DPP は次の条件を満たすものです。
+DPP は左端から 1 つずつずらして並べた数の配列であって次の条件を満たすものです。
 
 - 各行について広義単調減少
 - 各列について狭義単調減少
@@ -342,15 +321,60 @@ DPP は次の条件を満たすものです。
 - $3 \ 3$
 - $\begin{matrix} 3 & 3 \\ & 2\end{matrix}$
 
-7 つあります。最大値が $n$ 以下の DPP の個数は
+7 つあります。$3 \times 3$ の交代符号行列の個数と等しいです。
+
+### TSSCPP
+
+平面分割は 3 次元ヤング図形とも呼ばれます。座標 $(i,j,k)$ に箱が置かれているとき、$(i,j,k)$ の任意の並べ替え $(i',j',k')$ に対してこの座標にも箱が置かれているような平面分割を **totally symmetric** といいます。
+
+$2n \times 2n \times 2n$ の領域内の平面分割を考えます。この平面分割が **self-complementary** とは、補集合を考えて得られる平面分割が元の平面分割と等しいことをいいます。2 つの条件を満たす平面分割を totally symmetric self-complementary plane partition (TSSCPP) といいます。
+
+![](./1.png)
+
+$2n \times 2n \times 2n$ の領域内にある TSSCPP の個数は交代符号行列の個数と等しくなります。上の図は $n=3$ の場合の例です。$n=3$ の場合の TSSCPP は上の図を含めて 7 個あります。
+
+## 証明
+
+DPP や TSSCPP の個数は知られていましたが、交代符号行列の個数がこれらに等しいことの証明は長らく得られていませんでした。
+
+交代符号行列予想の最初の証明は Zeilberger {{< ref label="zei96" >}} により与えられました。80 ページほどある長い論文です。その上、読んでみるとわかるように他の論文ではあまり見られない書かれ方です。
+
+## 四角い氷
+
+Zeilberger による証明の後、Kuperberg により短い証明 {{< ref label="kup96" >}} が発表されました。
+
+次のような図を考えてみましょう。
+
+![](./Izm4X8z.png)
+
+平面上に水素原子と酸素原子が並んでいて、線でつないで $\mathrm{H}_2\mathrm{O}$ を作ります。これは square ice と呼ばれています。
+
+square ice の $\mathrm{H}_2\mathrm{O}$ に次のような操作を行いましょう。
+
+- 折れ曲がっている　→　$0$
+- 横向き　→　$+1$
+- 縦向き　→　$-1$
+
+この操作を行うと次の行列が得られます。
 
 $$
-\prod_{j=0}^{n-1}\frac{(3j+1)!}{(n+j)!}
+\begin{pmatrix}
+1 & 0 & 0 & 0 \\
+0 & 0 & 1 & 0 \\
+0 & 1 & -1 & 1 \\
+0 & 0 & 1 & 0
+\end{pmatrix}
 $$
 
-となることが知られています。交代符号行列予想を見直すとわかるように、交代符号行列と DPP は同じ個数だけ存在します！
+おわかりいただけたでしょうか。そう、交代符号行列です。実は交代符号行列と square ice は一対一に対応します。
 
-そして、DPP の場合には組合せ論的証明が存在します。
+square ice は **6 頂点模型**と呼ばれるものと関連します。このように交代符号行列は物理とも関連します。実際、Kuperberg による交代符号行列予想の別証明も物理学的なものでした。
+
+## 組合せ論的証明
+
+交代符号行列予想は証明されましたが、Combinatorialist は組合せ論的な証明を追求したくなるものです。
+
+DPP の場合には組合せ論的証明が存在します。
 
 ![](./KTBCaNv.png)
 
@@ -360,32 +384,20 @@ $$
 \det\left(\delta_{ij}+\binom{i+j}{j-1}\right)_{i,j=1}^{n-1}
 $$
 
-(ここで $\delta_{ij}$ はクロネッカーのデルタ) になることがわかり、計算することでお望みの式が得られるらしいです。(筆者は計算していません)
+（ここで $\delta_{ij}$ はクロネッカーのデルタ）になることがわかり、計算することでお望みの式が得られるらしいです。（筆者は計算していません）
 
-ということで DPP の場合には組合せ論的証明がありました。交代符号行列の場合はどうでしょう。交代符号行列と DPP の間に全単射を構成できれば、組合せ論的証明ができたことになります。もちろん統計力学的証明により個数が等しいことがわかっているので、全単射は存在します。全単射なら何でもよいというわけではなく、組合せ論的に「いい感じ」の全単射でないと喜べないわけです。
+ということで DPP の場合には組合せ論的証明がありました。交代符号行列の場合はどうでしょう。交代符号行列と DPP の間に全単射を構成できれば、組合せ論的証明ができたことになります。もちろん物理学的証明により個数が等しいことがわかっているので、全単射は存在します。全単射なら何でもよいというわけではなく、組合せ論的に「いい感じ」の全単射でないと喜べないわけです。
 
-この問題は長らく未解決でしたが、最近になって
-
-- Fischer, Ilse; Konvalinka, Matjaž. A bijective proof of the ASM theorem. I: The operator formula. Electron. J. Comb. 27, No. 3, Research Paper P3.35, 29 p. (2020).
-- Fischer, Ilse; Konvalinka, Matjaž. A bijective proof of the ASM theorem. II: ASM enumeration and ASM-DPP relation. Int. Math. Res. Not. 2022, No. 10, 7203-7230 (2022)
-
-という論文が発表されました。読んでいないので詳しくはわかりませんが、はじめての全単射的証明とのことです。
+この問題は長らく未解決でしたが、最近になって論文 {{< ref label="fk20" >}}, {{< ref label="fk22" >}} が発表されました。はじめての全単射的証明とのことです。
 
 ## おわりに
 
-交代符号行列を通じて組合せ論の奥深さを感じていただけたでしょうか。
+交代符号行列を通じて組合せ論の奥深さを感じていただけたでしょうか。他にも興味深いことがたくさんあるので、ぜひ調べてみてください。
 
 今後も月刊組合せ論 Natori では様々なトピックを紹介していきたいと思います。応援のほどよろしくお願いします！
 
 ## 参考文献
 
-交代符号行列について詳しく知りたい方は
+交代符号行列について詳しく知りたい方は {{< ref label="bre99" >}} を読みましょう。代数的組合せ論について基礎から丁寧に解説されています。
 
-- Bressoud, David M. Proofs and confirmations. The story of the alternating sign matrix conjecture. Cambridge University Press. xv, 274 p. (1999).
-
-を読みましょう。代数的組合せ論について基礎から丁寧に解説されています。
-
-その他の参考文献はこちら。
-
-- The Combinatorics of Alternating Sign Matrices (https://www.math.okayama-u.ac.jp/~mi/comb2018/talks/feb20/Behrend20180220final.pdf)
-- How the Alternating Sign Matrix Conjecture Was Solved (https://www.ams.org/notices/199906/fea-bressoud.pdf)
+{{< showbib >}}
