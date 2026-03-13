@@ -1,6 +1,7 @@
 +++
 title = "【月刊組合せ論 Natori】正多面体とグラフ理論【2022 年 10 月号】"
 date = 2022-10-01
+tags = ["グラフ理論"]
 +++
 
 {{< addbib label="manabi" title="正多面体が５種類しかないことの２通りの証明" link="https://manabitimes.jp/math/899" >}}

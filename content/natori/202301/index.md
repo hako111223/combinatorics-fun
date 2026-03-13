@@ -1,6 +1,7 @@
 +++
 title = "【月刊組合せ論 Natori】ヤング図形のコア【2023 年 1 月号】"
 date = 2023-01-01
+tags = ["ヤング図形", "表現論", "競プロ"]
 +++
 
 {{< addbib label="eo06" title="Eskin, Alex; Okounkov, Andrei. Pillowcases and quasimodular forms. Algebraic geometry and number theory. In Honor of Vladimir Drinfeld’s 50th birthday. Progress in Mathematics 253, 1-25 (2006)." >}}

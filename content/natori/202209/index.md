@@ -1,6 +1,7 @@
 +++
 title = "【月刊組合せ論 Natori】EDPC-T Permutation を深掘り【2022 年 9 月号】"
 date = 2022-09-01
+tags = ["数え上げ", "競プロ"]
 +++
 
 {{< addbib label="ar14" title="Adin, R. M., & Roichman, Y. Enumeration of standard Young tableaux. arXiv:1408.4497." link="https://arxiv.org/abs/1408.4497" >}}

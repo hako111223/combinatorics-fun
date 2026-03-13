@@ -1,6 +1,7 @@
 +++
 title = "【月刊組合せ論 Natori】ルイス・キャロルと交代符号行列【2022 年 11 月号】"
 date = 2022-11-01
+tags = ["数え上げ", "線形代数"]
 +++
 
 {{< addbib label="beh" title="Behrend, Roger. The Combinatorics of Alternating Sign Matrices" link="https://www.math.okayama-u.ac.jp/~mi/comb2018/talks/feb20/Behrend20180220final.pdf" >}}
