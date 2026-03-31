@@ -21,7 +21,8 @@ https://hakomonogatari.pages.dev/characters/ec/
 
 Enumerative Combinatorics、通称 EC の第一章を読みます。
 
-- [数え上げってなんだろう？](./season1-1/)
+1. [数え上げってなんだろう？](./season1-1/)
+2. [二項係数はすごい！](./season1-2/)
 
 ## こみっく！
 
