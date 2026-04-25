@@ -25,3 +25,9 @@ title: "数学記事・PDF"
 - [キューティーなカタラン数](./qt-catalan/) : 日曜数学 Advent Calendar 2025 の 7 日目の記事です。
 - [外積代数と行列木定理](./exterior-algebra/) : 木 Advent Calendar 2025 の 13 日目の記事です。
 - [すべての定理は組合せ論的に証明すべきである](./all-theorems-combinatorially/) : さまざまな定理の組合せ論的証明を扱います。
+
+## PDF
+
+PDF の仮の置き場です。将来的に別のサイトに移る可能性があります。
+
+- [頂点代数](./vertex-algebra.pdf) : 頂点代数について勉強したことをまとめたノートです。
