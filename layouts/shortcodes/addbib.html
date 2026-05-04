@@ -2,9 +2,9 @@
 {{ $title := .Get "title" }}
 {{ $link := .Get "link" }}
 
-{{ site.Store.Add "bibcounter" 1 }}
-{{ $current := site.Store.Get "bibcounter" }}
-{{ site.Store.SetInMap "bibitem" $label $title }}
-{{ site.Store.SetInMap "biblink" $label $link }}
-{{ site.Store.SetInMap "bibnum" $label $current }}
-{{ site.Store.Add "biblabel" (slice $label) }}
+{{ .Page.Store.Add "bibcounter" 1 }}
+{{ $current := .Page.Store.Get "bibcounter" }}
+{{ .Page.Store.SetInMap "bibitem" $label $title }}
+{{ .Page.Store.SetInMap "biblink" $label $link }}
+{{ .Page.Store.SetInMap "bibnum" $label $current }}
+{{ .Page.Store.Add "biblabel" (slice $label) }}

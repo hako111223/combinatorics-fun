@@ -1,4 +1,4 @@
 {{ $label := .Get "label" }}
-{{ $bibnum := site.Store.Get "bibnum" }}
+{{ $bibnum := .Page.Store.Get "bibnum" }}
 {{ $ref := index $bibnum $label }}
 [{{ $ref }}]

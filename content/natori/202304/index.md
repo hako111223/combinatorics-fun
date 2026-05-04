@@ -1,8 +1,12 @@
----
-title: "【月刊組合せ論 Natori】森の数え上げとカタラン数の畳み込み【2023 年 4 月号】"
-date: 2023-04-01
-showTableOfContents: true
----
++++
+title = "【月刊組合せ論 Natori】森の数え上げとカタラン数の畳み込み【2023 年 4 月号】"
+date = 2023-04-01
+tags = ["数え上げ", "競プロ"]
++++
+
+{{< addbib label="fs09" title="Flajolet, Philippe; Sedgewick, Robert. Analytic combinatorics. Cambridge University Press (2009)." >}}
+{{< addbib label="cf" title="[Tutorial] Catalan Numbers and Catalan Convolution" link="https://codeforces.com/blog/entry/87585" >}}
+{{< addbib label="kanpurin" title="グリッドの最短経路の数え上げまとめ - かんプリンの学習記録" link="https://kanpurin.hatenablog.com/entry/2021/09/15/220913" >}}
 
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回はカタラン数と畳み込みについて考えます。
 
@@ -27,7 +31,7 @@ $$
 - 頂点数 $2n+1$ の二分木の個数
 - 対角線をまたがないグリッドの経路の個数
 
-などに等しいです。
+などに等しいです。個数がカタラン数に等しくなるオブジェクトはたくさん知られており、まさに数え上げ組合せ論の中心であると言えます。
 
 今回考えるのは、母関数のべき乗 $C(x)^k$ から得られる数列です。$C(x)^k$ の $x^n$ の係数を $[x^n]C(x)^k$ と表します。
 
@@ -37,15 +41,15 @@ $$
 
 深さ優先探索を行って、進むときに `(`、戻るときに `)` を追加します。正確には次のようなアルゴリズムです。
 
-- 根から出発する。
-- まだ訪問していない子があるとき、そのうち最初の子に移動する。`(` を追加する。
-- そうでないとき、親に戻る。`)` を追加する。
+- 根から出発する。初め括弧列は空である。
+- まだ訪問していない子があるとき、そのうち最初の子に移動する。括弧列に `(` を追加する。
+- そうでないとき、親に戻る。括弧列に `)` を追加する。
 
 次の木の場合、得られる括弧列は `(()())()(())` です。
 
 ![](./DCdXX2A.png)
 
-このようにして頂点数 $n+1$ の木と長さ $2n$ の正しい括弧列の間の全単射を作ることができます。よって個数は $C_n$ です。
+このようにして頂点数 $n+1$ の木と長さ $2n$ の正しい括弧列の間の全単射を作ることができます。個数はともに $C_n$ です。
 
 ## 森の数え上げ
 
@@ -71,7 +75,7 @@ $$
 が成り立つ。
 {{< /alert >}}
 
-証明は Analytic Combinatorics などを参照してください。
+証明は {{< ref label="fs09" >}} などを参照してください。
 
 $y(x)=xC(x)=\frac{1-\sqrt{1-4x}}{2}, \phi(u)=\frac{1}{1-u}$ とすると仮定をみたすので
 
@@ -107,13 +111,13 @@ $$
 [x^M]C(x)^N-\binom{N}{1}C_K[x^{M-K}]C(x)^{N-1}+\binom{N}{2}C_K^2[x^{M-2K}]C(x)^{N-2}-\cdots
 $$
 
-となります。この式は包除原理からも得ることができます。
+となります。
 
 ### Xmas Contest 2022 D - Dichotomy
 
 問題リンク：[https://atcoder.jp/contests/xmascon22/tasks/xmascon22_d](https://atcoder.jp/contests/xmascon22/tasks/xmascon22_d)
 
-これも $[x^n]C(x)^k$ の計算に帰着されるそうです。(筆者は解いていません)
+これも $[x^n]C(x)^k$ の計算に帰着されるそうです。（筆者は解いていません）
 
 ## おわりに
 
@@ -123,6 +127,4 @@ $$
 
 ## 参考文献
 
-- Flajolet, Philippe; Sedgewick, Robert. Analytic combinatorics. Cambridge University Press (2009).
-- [[Tutorial] Catalan Numbers and Catalan Convolution](https://codeforces.com/blog/entry/87585)
-- [グリッドの最短経路の数え上げまとめ - かんプリンの学習記録](https://kanpurin.hatenablog.com/entry/2021/09/15/220913)
+{{< showbib >}}

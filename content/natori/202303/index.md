@@ -5,7 +5,7 @@ tags = ["対称関数"]
 +++
 
 {{< addbib label="pra19" title="Prasad, Amritanshu. An introduction to Schur polynomials. Grad. J. Math. 4, No. 2, 62-84 (2019)." >}}
-{{< addbib label="xio20" title="Xiong, Rui. Schur Polynomials through Lindström Gessel Viennot Lemma." link="https://arxiv.org/abs/2003.09215" >}}
+{{< addbib label="xio20" title="Xiong, Rui. Schur Polynomials through Lindström Gessel Viennot Lemma" link="https://arxiv.org/abs/2003.09215" >}}
 
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は組合せ論・対称関数論を中心に幅広く活躍するシューア多項式について語っていきます。
 

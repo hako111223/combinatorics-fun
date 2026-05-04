@@ -74,4 +74,5 @@ title = "組合せ論、楽しい！"
 #     { ko-fi = "https://ko-fi.com/username" },
 #     { codeberg = "https://codeberg.org/username"},
 #     { printables = "https://www.printables.com/@username"},
+     { misskey = "https://misskey.flowers/@hako" },
   ]

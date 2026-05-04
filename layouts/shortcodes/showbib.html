@@ -1,6 +1,6 @@
-{{ $bibitem := site.Store.Get "bibitem" }}
-{{ $biblabel := site.Store.Get "biblabel" }}
-{{ $biblink := site.Store.Get "biblink" }}
+{{ $bibitem := .Page.Store.Get "bibitem" }}
+{{ $biblabel := .Page.Store.Get "biblabel" }}
+{{ $biblink := .Page.Store.Get "biblink" }}
 <ol>
     {{ range $biblabel }}
         {{ $item := index $bibitem . }}
@@ -12,7 +12,3 @@
         {{ end }}
     {{ end }}
 </ol>
-{{ site.Store.Delete "bibitem" }}
-{{ site.Store.Delete "bibnum" }}
-{{ site.Store.Delete "biblabel" }}
-{{ site.Store.Set "bibcounter" 0 }}
