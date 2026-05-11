@@ -1,8 +1,14 @@
----
-title: "【月刊組合せ論 Natori】フック長公式【2023 年 5 月号】"
-date: 2023-05-01
-showTableOfContents: true
----
++++
+title = "【月刊組合せ論 Natori】フック長公式【2023 年 5 月号】"
+date = 2023-05-01
+tags = ["数え上げ", "ヤング図形"]
++++
+
+{{< addbib label="gnw79" title="Greene, Curtis; Nijenhuis, Albert; Wilf, Herbert S. A probabilistic proof of a formula for the number of Young tableaux of a given shape. Adv. Math. 31, 104-109 (1979)." >}}
+{{< addbib label="pak01" title="Hook length formula and geometric combinatorics. Sémin. Lothar. Comb. 46, B46f, 13 p. (2001)." >}}
+{{< addbib label="rom15" title="Romik, Dan. The surprising mathematics of longest increasing subsequences. Cambridge University Press. (2015)." >}}
+{{< addbib label="sag01" title="Sagan, Bruce E. The symmetric group. Representations, combinatorial algorithms, and symmetric functions. 2nd ed. Springer. (2001)." >}}
+{{< addbib label="ike22" title="池田岳. テンソル代数と表現論. 東京大学出版会" >}}
 
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回はヤング図形好きなら外せない、フック長公式について深掘りしていきます。
 
@@ -26,11 +32,11 @@ $$
 
 以下ではフック長公式の証明をいくつか紹介します。1 つ目の証明のみ詳述し、残りは概略を述べるだけとします。
 
-## 確率論的証明
+## 確率を用いた証明
 
-この証明が恐らくもっとも有名ではないでしょうか。
+この証明が恐らくもっとも有名ではないでしょうか。{{< ref label="gnw79" >}} の証明です。
 
-$\lambda$ 上の標準タブローの個数を $D_{\lambda}$ とおき、$F_{\lambda}=\frac{n!}{\prod_{(i,j)\in\lambda}h(i,j)}$ とおきます。
+$\lambda$ 上の標準タブローの個数を $D_{\lambda}$ とおき、$F_{\lambda}=\frac{n!}{\prod_{(i,j)\in\lambda}h(i,j)}$ とおきます。目標は $D_{\lambda}=F_{\lambda}$ を示すことです。
 
 $\lambda$ の**隅**とは、右にも下にもマスがないようなマスをいいます。最大の数 $n$ が書き込まれるのは隅です。この隅を削除するとサイズ $n-1$ の標準タブローが得られます。よって $D_{\lambda}$ は次の漸化式を満たします。
 
@@ -62,7 +68,7 @@ $$
 
 必ず終点が隅になることから確率の総和は 1 なので、この命題から示すべき式が従います。
 
-命題を証明します。$(i,j)$ が隅 $(a,b)$ と同じ行にも列にもないとき $h_{\lambda}(i,j)=h_{\mu}(i,j)$ であることに注意すると
+命題を証明します。$\mu$ を $\lambda$ から隅 $(a,b)$ を除いた図形とします。$(i,j)$ が隅 $(a,b)$ と同じ行にも列にもないとき $h_{\lambda}(i,j)=h_{\mu}(i,j)$ である一方、同じ行または同じ列にあるときは $h_{\mu}(i,j)=h_{\lambda}(i,j)-1$ であることに注意すると
 
 $$
 \begin{align*}
@@ -108,7 +114,9 @@ $$
 P(A,B)=\frac{h_{\lambda}(x_1,b)-1+h_{\lambda}(a,y_1)-1}{h_{\lambda}(x_1,y_1)-1}Q(A,B)=Q(A,B)
 $$
 
-となります。
+となります。$h_{\lambda}(x_1,y_1)-1=h_{\lambda}(x_1,b)-1+h_{\lambda}(a,y_1)-1$ は図を描いて確かめてください。
+
+これで証明が完了しました。この証明は「確率論的な証明」と呼ばれることがありますが、大学数学における確率論は測度論などを用いた厳密なものであるのに対して、この証明は高校数学の知識しか用いていません。実際に名古屋大学の入試でこの証明を元にした問題が出題されています。
 
 ## 全単射
 
@@ -116,13 +124,13 @@ $$
 
 標準タブローの個数が $F_{\lambda}$、フックタブローの個数が $\prod_{(i,j)}h(i,j)$ であることから、標準タブローとフックタブローの組が順列と一対一対応することを示せばよいです。
 
-詳しくは Sagan の教科書で解説されています。
+詳しくは {{< ref label="sag01" >}} で解説されています。
 
 ## 表現論
 
 ヤング図形は対称群の表現論と深くかかわります。例えば対称群 $S_n$ の既約表現はサイズ $n$ のヤング図形と一対一に対応し、$\lambda$ に対応する既約表現の次元は $\lambda$ 上の標準タブローの個数と等しくなります。
 
-フロベニウスの指標公式と呼ばれるものがあり、そこから証明することができるようです。『テンソル代数と表現論』を参照してください。
+フロベニウスの指標公式と呼ばれるものがあり、そこから証明することができるようです。{{< ref label="ike22" >}} を参照してください。
 
 ## 複素解析
 
@@ -132,11 +140,7 @@ $$
 
 ## 幾何学
 
-幾何学な証明は
-
-- Pak, Igor. Hook length formula and geometric combinatorics. Sémin. Lothar. Comb. 46, B46f, 13 p. (2001).
-
-にあるようです。(読んでいないのでわかりません……)
+幾何学な証明は {{< ref label="pak01" >}} にあるようです。（読んでいません……）
 
 ## おわりに
 
@@ -146,6 +150,4 @@ $$
 
 ## 参考文献
 
-- 池田岳. テンソル代数と表現論. 東京大学出版会. (2022).
-- Romik, Dan. The surprising mathematics of longest increasing subsequences. Cambridge University Press. (2015).
-- Sagan, Bruce E. The symmetric group. Representations, combinatorial algorithms, and symmetric functions. 2nd ed. Springer. (2001).
+{{< showbib >}}
