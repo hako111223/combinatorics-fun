@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  {{ with .Site.Language.Params.htmlCode | default .Site.LanguageCode }}
+  {{ with .Site.Language.Params.htmlCode | default .Site.Language.Locale }}
     <meta http-equiv="content-language" content="{{ . }}">
   {{ end }}
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,13 +12,23 @@
     <title>{{ .Site.Title | emojify }}</title>
     <meta name="title" content="{{ .Site.Title | emojify }}">
   {{ else }}
-    <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
-    <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}">
+    <title>{{ .Title | plainify | emojify }} &middot; {{ .Site.Title | emojify }}</title>
+    <meta name="title" content="{{ .Title | plainify | emojify }} &middot; {{ .Site.Title | emojify }}">
   {{ end }}
 
   {{/* Metadata */}}
-  {{ with (.Params.Summary | default .Params.Description) | default .Site.Params.description }}
-    <meta name="description" content="{{ . }}">
+  {{ $metaDescriptionOrder := .Site.Params.seo.metaDescriptionOrder | default (slice "summary" "description" "site") }}
+  {{ $metaDescriptionSources := dict
+    "summary" .Params.Summary
+    "description" .Params.Description
+    "site" .Site.Params.description
+  }}
+  {{ $metaDescription := "" }}
+  {{ range $metaDescriptionOrder }}
+    {{ $metaDescription = $metaDescription | default (index $metaDescriptionSources (lower .)) }}
+  {{ end }}
+  {{ with $metaDescription }}
+    <meta name="description" content="{{ . | plainify }}">
   {{ end }}
   {{ with  .Params.Tags | default .Site.Params.keywords }}
     <meta name="keywords" content="{{ range . }}{{ . }},{{ end }}">
@@ -30,6 +40,14 @@
     <meta name="robots" content="{{ . }}">
   {{ end }}
   <link rel="canonical" href="{{ .Permalink }}">
+  {{ if .IsTranslated }}
+    {{ range .AllTranslations }}
+      {{ $hreflang := .Language.Locale | default .Language.Lang }}
+      {{ if $hreflang }}
+        <link rel="alternate" hreflang="{{ $hreflang }}" href="{{ .Permalink }}">
+      {{ end }}
+    {{ end }}
+  {{ end }}
   {{ range .AlternativeOutputFormats }}
     {{ printf `
       <link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .RelPermalink ($.Site.Title | emojify) |
@@ -146,7 +164,9 @@
     {{ $jsResources = $jsResources | append (resources.Get "js/scroll-to-top.js") }}
   {{ end }}
   {{ if .Site.Params.enableSearch | default false }}
-    {{ $jsResources = $jsResources | append (resources.Get "lib/fuse/fuse.min.js") | append (resources.Get "js/search.js") }}
+    {{ $fuseRaw := resources.Get "lib/fuse/fuse.min.cjs" }}
+    {{ $fuse := resources.FromString "lib/fuse/fuse.min.js" (replace $fuseRaw.Content "module.exports=" "window.Fuse=") }}
+    {{ $jsResources = $jsResources | append $fuse | append (resources.Get "js/search.js") }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
     {{ $jsResources = $jsResources | append (resources.Get "js/code.js") }}
@@ -209,6 +229,23 @@
       crossorigin="anonymous"></script>
   {{ end }}
   
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.css" integrity="sha384-/L6i+LN3dyoaK2jYG5ZLh5u13cjdsPDcFOSNJeFBFa/KgVXR5kOfTdiN3ft1uMAq" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.38/dist/katex.min.js" integrity="sha384-H6s1ZrH2CKpFpqR680poRdStIRJGXty7fSkxAcIfxwl9iu6A4BOPtTk7vQ58Ovio" crossorigin="anonymous"></script>
+  {{ $katexCSS := resources.Get "lib/katex/katex.min.css" }}
+  {{ $katexCSS := $katexCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="{{ $katexCSS.RelPermalink }}"
+    integrity="{{ $katexCSS.Data.Integrity }}">
+  {{ $katexLib := resources.Get "lib/katex/katex.min.js" }}
+  {{ $katexJS := $katexLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
+  <script
+    defer
+    type="text/javascript"
+    src="{{ $katexJS.RelPermalink }}"
+    integrity="{{ $katexJS.Data.Integrity }}"
+    id="katex-render"></script>
+  {{ $katexFonts := resources.Match "lib/katex/fonts/*" }}
+  {{ range $katexFonts }}
+    <!-- {{ .RelPermalink }} -->
+  {{ end }}
 </head>

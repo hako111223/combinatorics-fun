@@ -31,11 +31,6 @@
   weight = 12
 
 [[main]]
-  name = "MathZine"
-  pageRef = "mathzine"
-  weight = 13
-
-[[main]]
   name = "Posts"
   pageRef = "posts"
   weight = 15
@@ -44,6 +39,12 @@
   name = "Novels"
   pageRef = "novels"
   weight = 16
+
+[[main]]
+  identifier = "github"
+  pre = "github"
+  url = "https://github.com/hako111223/combinatorics-fun"
+  weight = 400
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
