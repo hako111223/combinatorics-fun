@@ -1,0 +1,7 @@
+{{ $title := .Get "title" }}
+{{ $content := .Inner | markdownify }}
+
+<div class="flex flex-col gap-0 my-8">
+  <span class="w-fit mx-4 px-4 bg-primary-500 text-white font-bold rounded-t-lg">{{ $title }}</span>
+  <div class="px-4 bg-primary-100 dark:bg-primary-900 border-2 border-primary-300 shadow-xl rounded-lg">{{ $content }}</div>
+</div>
