@@ -12,7 +12,7 @@ tags = ["数え上げ", "線形代数"]
 {{< addbib label="kup96" title="Kuperberg, Greg. Another proof of the alternating-sign matrix conjecture. Int. Math. Res. Not. 1996, No. 3, 139-150 (1996)." >}}
 {{< addbib label="zei96" title="Zeilberger, Doron. Proof of the alternating sign matrix conjecture. Electron. J. Comb. 3, No. 2, Research paper R13, 84 p. (1996);" >}}
 
-月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回の主役は交代符号行列と呼ばれるものです。
+月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回の主役は交代符号行列です。
 
 ## 交代符号行列
 
@@ -181,7 +181,7 @@ $$
 \det(A)=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)a_{1\sigma(1)}\cdots a_{n\sigma(n)}
 $$
 
-です。$a_{1\sigma(1)}\cdots a_{n\sigma(n)}$ という項が現れますが、$(i,\sigma(i))$ 成分を 1 とし、その他の成分を 0 とした行列を考えるとこれは置換行列となります。置換と置換行列は一対一に対応します。
+です。$(i,\sigma(i))$ 成分を 1 とし、その他の成分を 0 とした $n\times n$ 行列を考えるとこれは置換行列となります。置換と置換行列は一対一に対応します。
 
 ## 2×2 行列式の一般化
 
@@ -214,7 +214,8 @@ $$
 $$
 \begin{align*}
 & [(a_{11}a_{22}+\lambda a_{12}a_{21})(a_{22}a_{33}+\lambda a_{23}a_{32})+\lambda(a_{12}a_{23}+\lambda a_{13}a_{22})(a_{21}a_{32}+\lambda a_{22}a_{31})]/a_{22} \\
-&= a_{11}a_{22}a_{33}+\lambda a_{12}a_{21}a_{33}+\lambda a_{11}a_{23}a_{32}+(\lambda^2+\lambda)a_{12}a_{21}a_{23}a_{32}/a_{22}\\
+&= a_{11}a_{22}a_{33}+\lambda a_{12}a_{21}a_{33}+\lambda a_{11}a_{23}a_{32} \\
+&+(\lambda^2+\lambda)a_{12}a_{21}a_{23}a_{32}/a_{22}\\
 &+\lambda^2 a_{13}a_{21}a_{32}+\lambda^2 a_{12}a_{23}a_{31}+\lambda^3 a_{13}a_{22}a_{31}
 \end{align*}
 $$
@@ -271,15 +272,15 @@ $n\times n$ の交代符号行列がいくつあるかという問題が次に�
 
 一般項は次のように表されるのではないかという予想がなされました。
 
-{{< alert "lightbulb" >}}
-**交代符号行列予想**: $n\times n$ の交代符号行列の個数は
+{{< thmbox title="交代符号行列予想" >}}
+$n\times n$ の交代符号行列の個数は
 
 $$
 \prod_{j=0}^{n-1}\frac{(3j+1)!}{(n+j)!}
 $$
 
 に等しい。
-{{< /alert >}}
+{{< /thmbox >}}
 
 きれいな形をしています。いかにも組合せ論的に証明できそうな雰囲気がありますが、実は非常に難しい予想だったのです。
 
