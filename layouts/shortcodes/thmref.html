@@ -1,0 +1,16 @@
+{{ $link := printf "%s%s%s%s" site.LanguagePrefix "/textbook/theorems/" (.Get "link") "/" }}
+{{ $target := .Page }}
+
+{{ if ne $link .Page.RelPermalink }}
+  {{ $pages := slice }}
+  {{ range hugo.Sites }}
+    {{ $pages = $pages | append .Pages }}
+  {{ end }}
+  {{ $target = index (first 1 (where $pages "RelPermalink" $link)) 0 }}
+{{ end }}
+
+<button data-tooltip-target="tooltip-click" data-tooltip-trigger="click" type="button" class="text-white bg-primary-500 box-border border border-transparent shadow-xs rounded-lg px-2 py-1">{{- $target.Title -}}</button>
+
+<div id="tooltip-click" role="tooltip" class="absolute z-10 invisible text-sm opacity-0 tooltip">
+    {{ $target.Content }}
+</div>

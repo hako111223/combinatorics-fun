@@ -13,6 +13,11 @@
 [[main]]
   name = "About"
   pageRef = "about"
+  weight = 8
+
+[[main]]
+  name = "Textbook"
+  pageRef = "textbook"
   weight = 9
 
 [[main]]
@@ -29,6 +34,11 @@
   name = "EC"
   pageRef = "ec"
   weight = 12
+
+[[main]]
+  name = "Gallery"
+  pageRef = "gallery"
+  weight = 13
 
 [[main]]
   name = "Posts"

@@ -1,0 +1,12 @@
+{{ $link := printf "%s%s%s%s" site.LanguagePrefix "/textbook/theorems/" (.Get "link") "/" }}
+{{ $target := .Page }}
+
+{{ if ne $link .Page.RelPermalink }}
+  {{ $pages := slice }}
+  {{ range hugo.Sites }}
+    {{ $pages = $pages | append .Pages }}
+  {{ end }}
+  {{ $target = index (first 1 (where $pages "RelPermalink" $link)) 0 }}
+{{ end }}
+
+{{ $target.Content }}
