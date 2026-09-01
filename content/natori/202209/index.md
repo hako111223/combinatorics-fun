@@ -7,11 +7,10 @@ tags = ["数え上げ", "競プロ"]
 {{< addbib label="ar14" title="Adin, R. M., & Roichman, Y. Enumeration of standard Young tableaux. arXiv:1408.4497." link="https://arxiv.org/abs/1408.4497" >}}
 {{< addbib label="db70" title="de Bruijn, N. G. Permutations with given ups and downs. Nieuw Archief voor Wiskunde, 3/18(1) (1970): 61-65." >}}
 {{< addbib label="gv85" title="Gessel, Ira. & Viennot, Gérard. Binomial determinants, paths, and hook length formulae. Advances in mathematics 58.3 (1985): 300-321." >}}
-{{< addbib label="mac08" title="MacMahon, Percy Alexander 1908II. Second memoir on the compositions of numbers. Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character 207 65–134." >}}
-{{< addbib label="mar14" title="Marchal, Philippe. Permutations with a prescribed descent set. 2014. hal-00944244." link="https://hal.science/hal-00944244/document">}}
+{{< addbib label="mac07" title="MacMahon, Percy Alexander 1908II. Second memoir on the compositions of numbers. Philosophical Transactions of the Royal Society of London. Series A, Containing Papers of a Mathematical or Physical Character 207 65–134." >}}
 {{< addbib label="mpp18" title="Morales, Alejandro H., Pak, Igor. & Panova, Greta. Hook formulas for skew shapes I. q-analogues and bijections. Journal of Combinatorial Theory, Series A 154 (2018): 350-405." >}}
 {{< addbib label="nar14" title="Naruse, H. Schubert calculus and hook formula, talk slides at 73rd Sém. Lothar. Combin, Strobl, Austria, 2014;" link="https://www.emis.de/journals/SLC/wpapers/s73vortrag/naruse.pdf" >}}
-{{< addbib label="sta11" title="Stanley, Richard P. Enumerative Combinatorics Volume 1 second edition. Cambridge studies in advanced mathematics (2011)." >}}
+{{< addbib label="sta12" title="Stanley, Richard P. Enumerative Combinatorics Volume 1 second edition. Cambridge studies in advanced mathematics (2012)." >}}
 {{< addbib label="vie79" title="Viennot, Gérard. Permutations ayant une forme donnée. Discrete Mathematics 26.3 (1979): 279-284." >}}
 {{< addbib label="hot" title="【競技プログラミング】難問も解ける！Young tableaux及びSkew tableauxのフック長の公式と数え上げ問題への適用" link="https://qiita.com/hotman78/items/bbad58e5042da7837334" >}}
 
@@ -28,7 +27,7 @@ tags = ["数え上げ", "競プロ"]
 > 長さ $n-1$ の文字列 $s$ が与えられます。$s$ の文字は `<` または `>` です。
 > $(1,2,\ldots,n)$ の順列 $p$ であって、各 $i=1,2,\ldots,n-1$ に対して $p_i$ と $p_{i+1}$ の大小関係が $s_i$ であるものはいくつありますか。
 
-実はこの問題は数学的に奥が深く、様々な研究がされてきました。その歴史も古く、1908 年の MacMahon の論文 {{< cite label="mac08" >}} にも登場します。
+実はこの問題は数学的に奥が深く、様々な研究がされてきました。その歴史も古く、1907 年の MacMahon の論文 {{< cite label="mac07" >}} にも登場します。
 
 この記事ではこの問題を数学的に深掘りすることを目標にします。
 
@@ -347,7 +346,7 @@ $$
 B_i=-\sum_{j=0}^{i-1}B_j\frac{1}{(i-j)!}
 $$
 
-が成り立ちます。右辺は畳み込みと似た形をしています。relaxed convolution というアルゴリズムにより、時間計算量 $O(N(\log N)^2)$ で求めることができます。
+が成り立ちます。右辺は畳み込みと似た形をしています。relaxed convolution というアルゴリズムにより、時間計算量 $O(n(\log n)^2)$ で求めることができます。
 
 ## まとめ
 
