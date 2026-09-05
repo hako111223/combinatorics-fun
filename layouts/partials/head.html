@@ -229,26 +229,9 @@
       crossorigin="anonymous"></script>
   {{ end }}
   
-  {{ $katexCSS := resources.Get "lib/katex/katex.min.css" }}
-  {{ $katexCSS := $katexCSS | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
-  <link
-    type="text/css"
-    rel="stylesheet"
-    href="{{ $katexCSS.RelPermalink }}"
-    integrity="{{ $katexCSS.Data.Integrity }}">
-  {{ $katexLib := resources.Get "lib/katex/katex.min.js" }}
-  {{ $katexJS := $katexLib | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
-  <script
-    defer
-    type="text/javascript"
-    src="{{ $katexJS.RelPermalink }}"
-    integrity="{{ $katexJS.Data.Integrity }}"
-    id="katex-render"></script>
-  {{ $katexFonts := resources.Match "lib/katex/fonts/*" }}
-  {{ range $katexFonts }}
-    <!-- {{ .RelPermalink }} -->
-  {{ end }}
-
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js" integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs" crossorigin="anonymous"></script>
 
 </head>
