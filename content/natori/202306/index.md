@@ -148,9 +148,9 @@ $w$ を $(1,2,\ldots,n)$ の順列とします。このとき $w$ のチャー�
 
 別の観点からチャージを理解する試みがあります。次のような観点があります。
 
-- 結晶グラフ {{< ref label="llt95" >}}
-- energy function {{< ref label="ny97" >}}
-- affine Grassmannian {{< ref label="pat25" >}}
+- 結晶グラフ {{< cite label="llt95" >}}
+- energy function {{< cite label="ny97" >}}
+- affine Grassmannian {{< cite label="pat25" >}}
 
 ## 一般化
 
@@ -161,7 +161,7 @@ A 型の Kostka-Foulkes 多項式はチャージを用いて表せましたが�
 1. $\mathrm{SSYT}(\lambda,\mu)$ の代わりとなる集合 $S(\lambda,\mu)$ を見つける。
 2. $K_{\lambda\mu}(t)=\sum_{T\in S(\lambda,\mu)}t^{\mathrm{charge}(T)}$ をみたす関数 $\mathrm{charge}$ を見つける。
 
-C 型の場合部分的に解決されています。{{< ref label="dgt20" >}}, {{< ref label="ll20" >}}, {{< ref label ="pt25" >}} をご覧ください。
+C 型の場合部分的に解決されています。{{< cite label="dgt20" >}}, {{< cite label="ll20" >}}, {{< cite label ="pt25" >}} をご覧ください。
 
 ## おわりに
 
