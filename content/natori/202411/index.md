@@ -1,26 +1,30 @@
----
-title: "【月刊組合せ論 Natori】Stanley-Stembridge 予想【2024 年 11 月号】"
-date: 2024-11-01
-showTableOfContents: true
----
++++
+title = "【月刊組合せ論 Natori】Stanley-Stembridge 予想【2024 年 11 月号】"
+date = 2024-11-01
+tags = ["対称関数"]
++++
+
+{{< addbib label="hik" title="Hikita, Tatsuyuki. A proof of the Stanley-Stembridge conjecture. J. Amer. Math. Soc." >}}
 
 月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は彩色対称関数に関する未解決問題である Stanley-Stembridge 予想を紹介します。
 
 ## 彩色対称関数
 
-彩色数や彩色多項式については過去記事で少し解説しました。
+グラフ $G=(V,E)$ の**彩色多項式** $c_G(n)$ とは、グラフの頂点を $n$ 色のうちのいずれかで塗る方法であって、隣り合う 2 頂点が異なる色で塗られているものの個数です。名前の示す通り $n$ に関する多項式になります。
+
+彩色数は $c_G(n)>0$ となるような最小の正の整数 $n$ のことです。彩色数や彩色多項式については過去記事でも少し解説しました。
 
 [【月刊組合せ論 Natori】June Huh 氏の業績を解説【2022 年 12 月号】](../202212/)
 
-グラフ $G=(V,E)$ の彩色多項式 $c_G(n)$ とは、グラフの頂点を $n$ 色のうちのいずれかで塗る方法であって、隣り合う 2 頂点が異なる色で塗られているものの個数です。
-
-彩色対称関数は Stanley によって導入されました。色の集合を $\mathbb{P}=\{1,2,\ldots\}$ とします。色塗りのことを関数 $\kappa\colon V\to\mathbb{P}$ だと思うことにします。$x=(x_1,x_2,\ldots)$ を変数とします。彩色対称関数は
+**彩色対称関数**は Stanley によって導入されました。色の集合を $\mathbb{P}=\{1,2,\ldots\}$ とし、色塗りのことを関数 $\kappa\colon V\to\mathbb{P}$ であって辺 $\{i,j\}$ に対して $\kappa(i)\ne \kappa(j)$ をみたすものと同一視します。$x=(x_1,x_2,\ldots)$ を変数とします。彩色対称関数は
 
 $$
 X_G(x)=\sum_{\kappa}\prod_{v\in V}x_{\kappa(v)}
 $$
 
-により定義されます。ここで $\kappa$ は前述の通り隣り合う 2 頂点が異なる色であるような塗り方です。
+により定義されます。ここで $\kappa$ は前述の通り隣り合う 2 頂点が異なる色であるような塗り方全体を渡ります。
+
+変数を入れ替えても $X_G(x)$ は不変であることから、名前の通り $X_G(x)$ は対称関数です。
 
 例えば $\kappa$ を次のような塗り方とします。
 
@@ -46,7 +50,7 @@ $X_G(\underbrace{1,\ldots,1}_n,0,0,\ldots)$ は彩色多項式 $c_G(n)$ に等�
 
 では彩色対称関数はシューア関数の非負整数線形結合として表せるでしょうか？
 
-長いので以降は $s$-positive ということにします ($e$-positive なども同様)。
+長いので以降は $s$-positive ということにします。$e$-positive なども同様です。
 
 まず $G$ を完全グラフ $K_n$ とします。すると $X_G(x)=n!e_n=n!s_{(1,\ldots,1)}$ となります。よって $e$-positive であり $s$-positive でもあります。
 
@@ -60,28 +64,32 @@ $X_G(\underbrace{1,\ldots,1}_n,0,0,\ldots)$ は彩色多項式 $c_G(n)$ に等�
 
 $P$ を半順序集合とします。$P$ から次のようにグラフを作ります。頂点集合は $P$ と同一とし、$u,v\in P$ に対して $u\le v$ でも $v\le u$ でもないとき辺を張ります。このグラフを $\mathrm{inc}(P)$ とし、比較不能性グラフと呼ぶことにします。
 
-$P$ が次の図を induced subposet して含まないとき、$P$ は $(3+1)$-free といいます。
+$P$ が次の図を induced subposet として含まないとき、$P$ は $(3+1)$-free といいます。
 
 ![image](./upload_9634d52b4c228e1043784d8e48eec4da.png)
 
-$P$ がこの図のような poset であるとき、$\mathrm{inc}(P)$ は爪となります。爪は $e$-positive でなかったので、$(3+1)$-free poset から得られるグラフ $\mathrm{inc}(P)$ は $e$-positive でない可能性が減っていると考えられます。
+上の図のような poset の比較不能性グラフは爪となります。爪は $e$-positive でなかったので、$(3+1)$-free poset から得られるグラフ $\mathrm{inc}(P)$ は $e$-positive でない可能性が減っていると考えられます。
 
 そして本題の Stanley-Stembridge 予想とは、このとき必ず $e$-positive になるという予想です。
 
-{{< alert "lightbulb" >}}
-**予想** (Stanley-Stembridge): $P$ が $(3+1)$-free poset ならば、比較不能性グラフ $\mathrm{inc}(P)$ の彩色対称関数は $e$-positive である。
-{{< /alert >}}
+{{< thmbox title="予想 (Stanley-Stembridge)" >}}
+$P$ が $(3+1)$-free poset ならば、比較不能性グラフ $\mathrm{inc}(P)$ の彩色対称関数は $e$-positive である。
+{{< /thmbox >}}
 
 なお $s$-positive であることは Gasharov によって証明されています。一般に $e$-positive ならば $s$-positive なので、この結果は Stanley-Stembridge 予想よりも弱い結果ということになります。
 
-## 証明？
+## 証明
 
-Stanley-Stembridge 予想は長くの間未解決問題でしたが、最近になって証明が発表されました。
+Stanley-Stembridge 予想は長くの間未解決問題でしたが、{{< cite label="hik" >}} で証明されました。
 
-https://arxiv.org/abs/2410.12758
+記事執筆時はプレプリントが出たばかりでしたが、現在は出版が決まっています。
 
-まだプレプリントの段階なので正しいかはわかりませんが、正しければ一大ニュースですね。
+証明の中身もいつか解説したいです。
 
 ## その他の話題
 
-Hessenberg 多様体との関連など、近年では彩色対称関数の研究はますます盛り上がっています。それも解説したかったのですが、時間がなかったのでまたいつか解説したいと思います。
+{{< cite label="hik" >}} を発展させた研究も多く出ています。また、Hessenberg 多様体との関連など、近年では彩色対称関数の研究はますます盛り上がっています。それも解説したかったのですが、時間がなかったのでまたいつか解説したいと思います。
+
+## 参考文献
+
+{{< showbib >}}
