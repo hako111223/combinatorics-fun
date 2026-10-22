@@ -54,6 +54,9 @@
       safeHTML
     }}
   {{ end }}
+  {{ with site.Home.OutputFormats.Get "LLMS" }}
+    <link rel="describedby" href="{{ .RelPermalink }}">
+  {{ end }}
 
   {{/* Me */}}
   {{ with .Site.Params.Author.name }}
@@ -139,6 +142,7 @@
     type="text/javascript"
     src="{{ $jsAppearance.RelPermalink }}"
     integrity="{{ $jsAppearance.Data.Integrity }}"></script>
+  {{ partial "language-redirect.html" . }}
   {{ $enableA11y := .Site.Params.enableA11y | default false }}
   {{ if $enableA11y }}
     {{ $jsA11y := resources.Get "js/a11y.js" | resources.Minify | resources.Fingerprint $alg }}
@@ -155,7 +159,20 @@
   {{ end }}
   {{ if not .Site.Params.disableImageZoom | default true }}
     {{ $zoomJS := resources.Get "lib/zoom/zoom.min.umd.js" | resources.Fingerprint $alg }}
-    <script src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    <script defer src="{{ $zoomJS.RelPermalink }}" integrity="{{ $zoomJS.Data.Integrity }}"></script>
+    {{ $zoomInit := resources.Get "js/medium-zoom.js" | resources.Fingerprint $alg }}
+    <script defer src="{{ $zoomInit.RelPermalink }}" integrity="{{ $zoomInit.Data.Integrity }}"></script>
+  {{ end }}
+  {{ $showReadingProgress := site.Params.article.showReadingProgress | default false }}
+  {{ if isset .Params "showreadingprogress" }}
+    {{ $showReadingProgress = .Params.showReadingProgress }}
+  {{ end }}
+  {{ if and .IsPage $showReadingProgress }}
+    {{ $jsReadingProgress := resources.Get "js/reading-progress.js" | resources.Minify | resources.Fingerprint $alg }}
+    <script
+      type="text/javascript"
+      src="{{ $jsReadingProgress.RelPermalink }}"
+      integrity="{{ $jsReadingProgress.Data.Integrity }}"></script>
   {{ end }}
 
   {{/* JS deferred */}}
@@ -175,6 +192,7 @@
     {{ $jsResources = $jsResources | append (resources.Get "js/rtl.js") }}
   {{ end }}
   {{ $jsResources = $jsResources | append (resources.Get "js/katex-render.js") }}
+  {{ $jsResources = $jsResources | append (resources.Get "js/menu-a11y.js") }}
   {{ $jsResources = $jsResources | append (resources.Get "js/print-support.js") }}
   {{ $jsResources = $jsResources | append (resources.Get "js/email.js") }}
   {{ if $jsResources }}
@@ -231,7 +249,7 @@
   
   <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.css" integrity="sha384-vlBdW0r3AcZO/HboRPznQNowvexd3fY8qHOWkBi5q7KGgqJ+F48+DceybYmrVbmB" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.17.0/dist/katex.min.js" integrity="sha384-AtrdNsnxl/75rvBneBVH7DtOvCxSVahR2zWqle1coBKd8DEmLoviqNeJSx64gNAs" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.css" integrity="sha384-3rdsX6e5mueWyoweR9NIVmtEsUkokpBT/0ALqKKIBMr9j4qhHkaIkAcGgsE6uVlp" crossorigin="anonymous">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.19.0/dist/katex.min.js" integrity="sha384-QFFtAGzvvj+bfgCGxXJlNZZR1nXEZgvG8tDLCCY1F19xl20WlfTYgguB4VcNdxYk" crossorigin="anonymous"></script>
 
 </head>

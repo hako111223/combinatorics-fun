@@ -17,7 +17,7 @@ enableStructuredBreadcrumbs = false
 
 replyByEmail = false
 
-mainSections = ["natori", "kumialab", "mathzine", "posts"]
+mainSections = ["natori", "kumialab", "posts"]
 # robots = ""
 
 disableImageOptimization = false
@@ -86,9 +86,10 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showAuthor = true
   # showAuthorBottom = false
   showHero = true
-  # heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
-  layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
-  layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
+  heroStyle = "basic" # valid options: basic, big, background, thumbAndBackground
+  # layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  # layoutBackgroundBlurStyle = "fade" # valid options: fade, classic. Only used when heroStyle equals background
+  # layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showDraftLabel = true
   showEdit = false
@@ -118,6 +119,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # featureImageHover = false # subtle zoom on card thumbnails on hover
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  # layoutBackgroundBlurStyle = "fade" # valid options: fade, classic. Only used when heroStyle equals background
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showSummary = true
@@ -139,6 +141,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  # layoutBackgroundBlurStyle = "fade" # valid options: fade, classic. Only used when heroStyle equals background
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showViews = false
@@ -150,6 +153,7 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   showHero = false
   # heroStyle = "background" # valid options: basic, big, background, thumbAndBackground
   layoutBackgroundBlur = true # only used when heroStyle equals background or thumbAndBackground
+  # layoutBackgroundBlurStyle = "fade" # valid options: fade, classic. Only used when heroStyle equals background
   layoutBackgroundHeaderSpace = true # only used when heroStyle equals background
   showBreadcrumbs = false
   showViews = false
@@ -189,6 +193,13 @@ forgejoDefaultServer = "https://v11.next.forgejo.org"
   # globalWidgetMessage = "Hello"
   # globalWidgetColor = "#FFDD00"
   # globalWidgetPosition = "right"
+
+[kofi]
+  # identifier = ""
+  # globalWidget = true
+  # globalWidgetText = "Support me"
+  # globalWidgetBackgroundColor = "#00B9FE"
+  # globalWidgetTextColor = "#FFFFFF"
 
 [verification]
   # google = ""

@@ -2,17 +2,27 @@
 # These settings are required for the theme to function.
 
 [goldmark]
-  [goldmark.renderHooks]
-    [goldmark.renderHooks.link]
-      useEmbedded = 'always'
-    [goldmark.renderHooks.image]
-      useEmbedded = 'always'
+  [goldmark.parser]
+    wrapStandAloneImageWithinParagraph = false
+
+    [goldmark.parser.attribute]
+      block = true
+
+  [goldmark.renderer]
+    unsafe = true
+
   [goldmark.extensions]
     [goldmark.extensions.passthrough]
       enable = true
       [goldmark.extensions.passthrough.delimiters]
         block = [['\[', '\]'], ['$$', '$$']]
         inline = [['$', '$']]
+
+  [goldmark.renderHooks]
+    [goldmark.renderHooks.link]
+      useEmbedded = 'always'
+    [goldmark.renderHooks.image]
+      useEmbedded = 'always'
 
 [highlight]
   noClasses = false
