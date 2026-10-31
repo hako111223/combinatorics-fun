@@ -10,7 +10,7 @@ title = "いーしー部！"
 
 いおり・しいなの設定については以下のサイトをご覧ください。
 
-https://hakomonogatari.pages.dev/characters/ec/
+https://monogatari.hakoboshi.pink/characters/ec/
 
 ## ぷろろーぐ！
 

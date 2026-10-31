@@ -6,7 +6,7 @@ tags = ["対称関数"]
 
 {{< addbib label="hik" title="Hikita, Tatsuyuki. A proof of the Stanley-Stembridge conjecture. J. Amer. Math. Soc." >}}
 
-月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は彩色対称関数に関する未解決問題である Stanley-Stembridge 予想を紹介します。
+月刊組合せ論 Natori は面白そうな組合せ論のトピックを紹介していく企画です。今回は彩色対称関数に関する予想である Stanley-Stembridge 予想を紹介します。
 
 ## 彩色対称関数
 
@@ -41,7 +41,7 @@ $X_G(\underbrace{1,\ldots,1}_n,0,0,\ldots)$ は彩色多項式 $c_G(n)$ に等�
 - $m_{\lambda}$ : モノミアル対称関数
 - $h_{\lambda}$ : 完全対称関数
 - $e_{\lambda}$ : 基本対称関数
-- $p_{\lambda}$ : べき和対称関数
+- $p_{\lambda}$ : 冪和対称関数
 - $s_{\lambda}$ : シューア対称関数
 
 です。彩色対称関数もまた、これらの基底の線形結合として表すことができます。

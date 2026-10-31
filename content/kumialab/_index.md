@@ -11,7 +11,7 @@ authors = [ "kumia" ]
 
 早稲くみあのプロフィールは以下のサイトをご覧ください。
 
-https://hakomonogatari.pages.dev/characters/hs/
+https://monogatari.hakoboshi.pink/characters/hs/
 
 ## 独占インタビュー
 
